@@ -1,8 +1,11 @@
 .DS_Store
 node_modules
-/build
+
 /.svelte-kit
+/build
 /package
+/storybook-static
+
 .env
 .env.*
 !.env.example
