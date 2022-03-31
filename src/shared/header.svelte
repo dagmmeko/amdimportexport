@@ -4,7 +4,7 @@
 </script>
 
 <header
-  class="sticky w-full
+  class="sticky top-0 w-full
     grid grid-flow-col justify-items-stretch 
             px-4 sm:px-16 py-4
             bg-bgOne z-40"
@@ -14,18 +14,30 @@
     class="h-20 w-28 md:ml-12 justify-self-start"
     alt="AMD Home"
   />
-  <div class="justify-self-end grid grid-flow-col py-">
-    <nav>
-      <a href="/import"> {$t('common.import')} </a>
-      <a href="/export"> {$t('common.export')} </a>
-      <a href="/about"> {$t('common.about')} </a>
+  <div
+    class="justify-self-end grid grid-flow-col h-20 place-items-center pr-32"
+  >
+    <nav class="self-center">
+      <a href="/import" class="px-6"> {$t('common.import')} </a>
+      <a href="/export" class="px-6"> {$t('common.export')} </a>
+      <a href="/about" class="px-6"> {$t('common.about')} </a>
     </nav>
-    <div>
+
+    <div class="px-6">
       <select bind:value={$locale}>
         {#each $locales as value}
-          <option {value}>{value}</option>
+          <option {value}>{$t(`lang.${value}`)} </option>
         {/each}
       </select>
     </div>
   </div>
 </header>
+
+<style>
+  nav > a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+  }
+</style>
