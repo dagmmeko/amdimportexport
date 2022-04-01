@@ -1,11 +1,33 @@
 <script lang="ts">
   import { t } from '$lib/translations'
   import landing from '../../static/assets/images/landing.jpg'
-  import logo from '../../static/assets/logo/amdlogo.png'
+
   import polygon1 from '../../static/assets/icons/Polygon1.svg'
   import polygon2 from '../../static/assets/icons/Polygon2.svg'
-  import vector2 from '../../static/assets/icons/Vector2.svg'
+  import vector from '../../static/assets/icons/vector.svg'
+  import service from '../../static/assets/icons/service.svg'
+  import who from '../../static/assets/icons/who.svg'
+  import feedback from '../../static/assets/icons/feedback.svg'
+  import tractor from '../../static/assets/images/tractor.png'
+  import community from '../../static/assets/icons/community.svg'
+  import handshake from '../../static/assets/icons/handshake.svg'
+  import message from '../../static/assets/icons/message.svg'
 
+  import yirgacheffe from '../../static/assets/images/yirgacheffe.svg'
+  import sesame from '../../static/assets/images/sesame.svg'
+  import sunflower from '../../static/assets/images/sunflower.svg'
+  import soyaBeans from '../../static/assets/images/Soya-Beans.svg'
+
+  import sparePart from '../../static/assets/images/spare-part.svg'
+  import rangrover from '../../static/assets/images/rangrover.svg'
+  import hansaplast from '../../static/assets/images/hansaplast.svg'
+  import excavator from '../../static/assets/images/excavator.svg'
+
+  import coffeehands from '../../static/assets/images/coffeehands.png'
+  import SeriveCard from '../shared/components/service-card.svelte'
+  import Productcard from '../shared/components/home-product.svelte'
+
+  import review from '../../static/assets/icons/review.svg'
   import Contact from '../shared/contact.svelte'
 </script>
 
@@ -19,16 +41,22 @@
     class="object-cover h-[55rem] w-full"
     alt="Landing background"
   />
-  <div class="absolute inset-0 z-10 bg-black bg-opacity-60 ">
-    <div class="">
-      <h1 class="text-white font-sans font-light text-7xl ">
+  <div
+    class="absolute inset-0 z-10 bg-black bg-opacity-70 flex justify-items-stretch "
+  >
+    <div class="self-center md:pl-36 pl-16">
+      <h1
+        class="lg:leading-relaxed md:leading-relaxed leading-relaxed text-white font-sans font-light lg:w-[40rem] md:w-[30rem] w-[23rem] lg:text-6xl md:text-5xl text-4xl"
+      >
         {$t('common.landTitle')}
       </h1>
-      <p class="w-96 text-3xl text-white">
+      <p class="text-xl sm:w-[34rem] w-[24rem] text-white mt-8 leading-loose">
         {$t('common.landDesc')}
       </p>
       <a href="#contact" class="">
-        <div class="text-white bg-bgTwo p-4 w-56 h-14 rounded-md">
+        <div
+          class="text-white mt-8 bg-bgTwo p-4 w-56 h-14 rounded-md text-center"
+        >
           {$t('common.contact')}
         </div>
       </a>
@@ -40,98 +68,104 @@
   ABOUT US SECTION
     -->
 
-<section class="w-full relative z-0 bg-bgOne">
+<section class="w-full relative z-0 bg-bgOne grid justify-items-stretch">
   <div class="relative z-0">
-    <img src={polygon2} alt="" />
-    <div class="absolute inset-0 z-10">
-      <img src={polygon1} alt="" />
+    <img src={polygon2} alt="" class="-m-16 h-[32rem]" />
+    <div class="absolute inset-0 z-10 ">
+      <img src={polygon1} alt="" class="h-[27rem]" />
     </div>
   </div>
-  <div class="absolute inset-0 z-10 grid grid-cols-3 ">
-    <div class="-m-8 h-80 w-96 bg-white">
-      <img src={logo} alt="Who icon" />
-      <p class="text-center">
+
+  <div
+    class="absolute inset-0 z-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:pl-44 pl-24"
+  >
+    <div
+      class="-mt-8 h-96 w-96 bg-white drop-shadow-md grid justify-items-stretch"
+    >
+      <img src={who} alt="Who icon" class="justify-self-center pt-10" />
+      <p class="text-center p-8 leading-relaxed">
         {$t('common.who')}
       </p>
     </div>
-    <div class="-m-8 h-80 w-96 bg-white">
-      <img src={logo} alt="Who icon" />
-      <p class="text-center">
+    <div
+      class="lg:-mt-8 md:-mt-8 sm:mt-8 mt-8 h-96 w-96 bg-primary drop-shadow-md grid justify-items-stretch"
+    >
+      <img src={service} alt="Who icon" class="justify-self-center pt-10" />
+      <p class="text-center p-8 leading-relaxed text-white">
         {$t('common.how')}
       </p>
     </div>
-    <div class="-m-8 h-80 w-96 bg-white">
-      <img src={logo} alt="Who icon" />
-      <p class="text-center">
+    <div
+      class="md:-mt-8 sm:mt-8 mt-8 h-96 w-96 bg-white drop-shadow-md grid justify-items-stretch"
+    >
+      <img src={feedback} alt="Who icon" class="justify-self-center pt-10" />
+      <p class="text-center p-8 leading-relaxed">
         {$t('common.serve')}
       </p>
     </div>
   </div>
-  <div class="grid grid-cols-2">
+
+  <div class="grid lg:grid-cols-2 grid-cols-1 pl-44 justify-items-stretch ">
     <div>
-      <h1>{$t('common.whatTitle')}</h1>
-      <p>{$t('common.whatDesc')}</p>
+      <h1 class="text-4xl mb-6">{$t('common.whatTitle')}</h1>
+      <hr class="bg-primary h-1 w-48 mb-6" />
+      <p class="lg:w-[44rem] md:w-[50rem] sm:w-[40rem] text-xl leading-loose ">
+        {$t('common.whatDesc')}
+      </p>
     </div>
-    <img src={landing} alt="" />
+    <img
+      src={tractor}
+      alt=""
+      class="w-[41rem] h-[26rem] object-cover self-center lg:mt-0 mt-8"
+    />
   </div>
+
+  <a
+    href="/about"
+    class="justify-self-center mt-16 text-primary border-primary rounded-md border-2 h-12 w-52 grid"
+  >
+    <div class=" place-self-center">Learn More About AMD</div></a
+  >
 </section>
 
 <!--   
 Products section
    -->
 
-<section class="bg-bgOne">
+<section class="bg-bgOne pl-44 py-16 ">
   <!-- Import Products -->
-  <div>
-    <h1>{$t('common.importTitle')}</h1>
-    <div class="grid grid-cols-4">
-      <div class="h-64 w-72">
-        <img src={landing} alt="" />
-        <h1>{$t('common.importProd1')}</h1>
-      </div>
-      <div class="h-64 w-72">
-        <img src={landing} alt="" />
-        <h1>{$t('common.importProd2')}</h1>
-      </div>
-      <div class="h-64 w-72">
-        <img src={landing} alt="" />
-        <h1>{$t('common.importProd3')}</h1>
-      </div>
-      <div class="h-64 w-72">
-        <img src={landing} alt="" />
-        <h1>{$t('common.importProd4')}</h1>
-      </div>
+  <div class="grid justify-items-stretch">
+    <h1 class="text-4xl mb-6 ">{$t('common.importTitle')}</h1>
+    <hr class="bg-primary h-1 w-48 mb-6" />
+    <div class="grid grid-cols-4 mt-8">
+      <Productcard image={yirgacheffe} product={'importProd1'} />
+      <Productcard image={sesame} product={'importProd2'} />
+      <Productcard image={sunflower} product={'importProd3'} />
+      <Productcard image={soyaBeans} product={'importProd4'} />
     </div>
-    <a href="#contact" class="">
-      <div class="text-white bg-bgTwo p-4 w-56 h-14 rounded-md">
+    <a href="#contact" class="justify-self-center mt-10">
+      <div
+        class="text-white mt-8 bg-bgTwo py-4 px-16 h-14 rounded-md text-center"
+      >
         {$t('common.importLink')}
       </div>
     </a>
   </div>
 
   <!-- Export Products -->
-  <div>
-    <h1>{$t('common.exportTitle')}</h1>
-    <div class="grid grid-cols-4">
-      <div class="h-64 w-72">
-        <img src={landing} alt="" />
-        <h1>{$t('common.exportProd1')}</h1>
-      </div>
-      <div class="h-64 w-72">
-        <img src={landing} alt="" />
-        <h1>{$t('common.exportProd2')}</h1>
-      </div>
-      <div class="h-64 w-72">
-        <img src={landing} alt="" />
-        <h1>{$t('common.exportProd3')}</h1>
-      </div>
-      <div class="h-64 w-72">
-        <img src={landing} alt="" />
-        <h1>{$t('common.exportProd4')}</h1>
-      </div>
+  <div class="grid justify-items-stretch">
+    <h1 class="text-4xl mb-6 ">{$t('common.importTitle')}</h1>
+    <hr class="bg-primary h-1 w-48 mb-6" />
+    <div class="grid grid-cols-4 mt-8">
+      <Productcard image={rangrover} product={'exportProd1'} />
+      <Productcard image={excavator} product={'exportProd2'} />
+      <Productcard image={hansaplast} product={'exportProd3'} />
+      <Productcard image={sparePart} product={'exportProd4'} />
     </div>
-    <a href="#contact" class="">
-      <div class="text-white bg-bgTwo p-4 w-56 h-14 rounded-md">
+    <a href="#contact" class="justify-self-center mt-10">
+      <div
+        class="text-white mt-8 bg-bgTwo py-4 px-16 h-14 rounded-md text-center"
+      >
         {$t('common.exportLink')}
       </div>
     </a>
@@ -142,45 +176,22 @@ Products section
 Customer Service
  -->
 
-<section>
+<section class="">
   <div class="relative z-0 h-56">
-    <img src={landing} alt="" class="w-full h-56 object-cover" />
-    <div class="absolute inset-0 z-10 bg-black bg-opacity-60">
-      <h1 class="text-white text-5xl">{$t('common.customer')}</h1>
+    <img src={coffeehands} alt="" class="w-full h-56 object-cover" />
+    <div
+      class="absolute inset-0 z-10 bg-black bg-opacity-80 grid justify-items-stretch"
+    >
+      <h1 class="text-white text-5xl justify-self-center self-center">
+        {$t('common.customer')}
+      </h1>
     </div>
   </div>
 
-  <div class="bg-bgTwo bg-opacity-20 grid grid-cols-3 ">
-    <div class="relative z-0 h-72 w-96 bg-white mt-24">
-      <div class="relative z-0">
-        <img src={vector2} alt="" />
-        <div class="absolute inset-0 z-10">
-          <img src={logo} alt="" class="bg-white h-36 w-36 -my-20" />
-        </div>
-      </div>
-
-      <p>{$t('common.social')}</p>
-    </div>
-    <div class="relative z-0 h-72 w-96 bg-white">
-      <div class="relative z-0">
-        <img src={vector2} alt="" />
-        <div class="absolute inset-0 z-10">
-          <img src={logo} alt="" class="bg-white h-36 w-36 -my-20" />
-        </div>
-      </div>
-
-      <p>{$t('common.communicate')}</p>
-    </div>
-    <div class="relative z-0 h-72 w-96 bg-white">
-      <div class="relative z-0">
-        <img src={vector2} alt="" />
-        <div class="absolute inset-0 z-10">
-          <img src={logo} alt="" class="bg-white h-36 w-36 -my-20" />
-        </div>
-      </div>
-
-      <p>{$t('common.partner')}</p>
-    </div>
+  <div class="bg-bgTwo bg-opacity-20 grid grid-cols-3 pl-44 pb-24">
+    <SeriveCard image={vector} icon={community} detail={'social'} />
+    <SeriveCard image={vector} icon={message} detail={'communicate'} />
+    <SeriveCard image={vector} icon={handshake} detail={'partner'} />
   </div>
 </section>
 
@@ -190,14 +201,17 @@ Reviews
 
 <section
   style="background: linear-gradient(360deg, #ADC1C8 0%, #F1F1F1 100%)"
-  class=" py-24"
+  class="pl-44 py-16 "
 >
-  <h1>{$t('common.reviewTitle')}</h1>
+  <h1 class="text-4xl mb-6 ">{$t('common.reviewTitle')}</h1>
+  <hr class="bg-primary h-1 w-48 mb-6" />
   <div class="grid grid-cols-2">
-    <p class="p-8 bg-white border-blue-500 w-[33rem] h-80">
+    <p
+      class="p-12 bg-white border-primary border-2 w-[44rem] h-[21rem] text-xl text-center leading-loose"
+    >
       {$t('common.review')}
     </p>
-    <img src={landing} alt="" class="w-[33rem] h-80" />
+    <img src={review} alt="" class="w-[38rem] h-[24rem]" />
   </div>
 </section>
 
