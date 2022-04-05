@@ -206,14 +206,14 @@ Reviews
   class="md:px-44 px-10 py-16 grid place-items-center "
 >
   <h1 class="text-4xl mb-6 place-self-start">{$t('common.reviewTitle')}</h1>
-  <hr class="bg-primary h-1 w-48 mb-6 place-self-start" />
-  <div class="grid md:grid-cols-2 grid-cols-1">
+  <hr class="bg-primary h-1 w-48 mb-16 place-self-start" />
+  <div class="grid md:grid-cols-2 grid-cols-1 ">
     <p
-      class="p-12 bg-white border-primary border-2 md:w-[35rem] lg:w-[44rem] w-auto text-xl text-center leading-loose"
+      class="p-12 bg-white border-primary border-2 md:w-[30rem] lg:w-[44rem] w-auto text-xl text-center leading-loose"
     >
       {$t('common.review')}
     </p>
-    <img src={review} alt="" class="w-[38rem] h-[24rem]" />
+    <img src={review} alt="" class="w-[38rem] h-[24rem] " />
   </div>
 </section>
 
