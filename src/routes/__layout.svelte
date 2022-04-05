@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-  <title>Hello</title>
+  <title>AMD Import and Export</title>
 </svelte:head>
 <Header />
 <slot />

@@ -5,12 +5,12 @@
 </script>
 
 <div class="relative z-0 ">
-  <img src={landing} alt="" class="w-full h-[50rem] object-cover" />
+  <img src={landing} alt="" class="w-full object-cover" />
   <div
     class="absolute inset-0 z-10 bg-black bg-opacity-60 grid justify-items-stretch"
   >
-    <div class="w-[60] justify-self-center bg-bgTwo my-16 rounded-md">
-      <div class="grid grid-cols-2">
+    <div class="w-[60] justify-self-center  my-16 rounded-md">
+      <div class="grid grid-cols-2 bg-bgTwo">
         <form class=" grid justify-items-stretch p-16">
           <h1
             class="justify-self-center text-white font-semibold text-3xl mb-8"

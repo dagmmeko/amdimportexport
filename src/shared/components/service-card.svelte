@@ -5,7 +5,7 @@
   export let detail
 </script>
 
-<div class="relative z-0 h-96 w-96 bg-white drop-shadow-md mt-32">
+<div class="relative z-0 w-96 bg-white drop-shadow-md mt-32">
   <div class="relative z-0">
     <img src={image} alt="" />
     <div

@@ -4,8 +4,8 @@
   export let product
 </script>
 
-<div class="h-80 w-96 grid drop-shadow-md">
-  <img src={image} alt="" class="w-96" />
+<div class="xl:w-96 llg:w-80 lg:w-72 w-96 drop-shadow-md lg:mt-0 mt-16">
+  <img src={image} alt="" class="xl:w-96 llg:w-80 lg:w-72 w-96" />
   <div class="">
     <h1
       class="text-center font-medium text-xl bg-white border-primary border-2 p-4"

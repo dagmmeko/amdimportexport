@@ -137,7 +137,7 @@ Products section
   <div class="grid justify-items-stretch">
     <h1 class="text-4xl mb-6 ">{$t('common.importTitle')}</h1>
     <hr class="bg-primary h-1 w-48 mb-6" />
-    <div class="grid grid-cols-4 mt-8">
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-8">
       <Productcard image={yirgacheffe} product={'importProd1'} />
       <Productcard image={sesame} product={'importProd2'} />
       <Productcard image={sunflower} product={'importProd3'} />
@@ -156,7 +156,7 @@ Products section
   <div class="grid justify-items-stretch">
     <h1 class="text-4xl mb-6 ">{$t('common.importTitle')}</h1>
     <hr class="bg-primary h-1 w-48 mb-6" />
-    <div class="grid grid-cols-4 mt-8">
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-8">
       <Productcard image={rangrover} product={'exportProd1'} />
       <Productcard image={excavator} product={'exportProd2'} />
       <Productcard image={hansaplast} product={'exportProd3'} />
@@ -188,7 +188,9 @@ Customer Service
     </div>
   </div>
 
-  <div class="bg-bgTwo bg-opacity-20 grid grid-cols-3 pl-44 pb-24">
+  <div
+    class="bg-bgTwo bg-opacity-20 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 pl-44 pb-24"
+  >
     <SeriveCard image={vector} icon={community} detail={'social'} />
     <SeriveCard image={vector} icon={message} detail={'communicate'} />
     <SeriveCard image={vector} icon={handshake} detail={'partner'} />
@@ -205,9 +207,9 @@ Reviews
 >
   <h1 class="text-4xl mb-6 ">{$t('common.reviewTitle')}</h1>
   <hr class="bg-primary h-1 w-48 mb-6" />
-  <div class="grid grid-cols-2">
+  <div class="grid md:grid-cols-2 grid-cols-1">
     <p
-      class="p-12 bg-white border-primary border-2 w-[44rem] h-[21rem] text-xl text-center leading-loose"
+      class="p-12 bg-white border-primary border-2 md:w-[35rem] w-[44rem] text-xl text-center leading-loose"
     >
       {$t('common.review')}
     </p>
@@ -219,6 +221,6 @@ Reviews
 Contact Us
    -->
 
-<section id="contact">
+<!-- <section id="contact">
   <Contact />
-</section>
+</section> -->
