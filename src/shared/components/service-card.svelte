@@ -5,17 +5,21 @@
   export let detail
 </script>
 
-<div class="relative z-0 w-96 bg-white drop-shadow-md mt-32">
-  <div class="relative z-0">
+<div
+  class="relative z-0 w-96 bg-white drop-shadow-md mt-32 grid place-content-center"
+>
+  <div class="relative z-0  grid place-content-center ">
     <img src={image} alt="" />
-    <div
-      class="absolute inset-0 z-10 h-40 w-40 rounded-full drop-shadow-md bg-white grid place-content-center -my-20"
-    >
-      <img src={icon} alt="" class="w-24" />
+    <div class="absolute inset-0 z-10 grid place-content-center">
+      <div
+        class="h-40 w-40 rounded-full drop-shadow-md bg-white grid place-content-center -my-20"
+      >
+        <img src={icon} alt="" class="w-24" />
+      </div>
     </div>
   </div>
 
-  <p class="text-center p-8 leading-loose ">
+  <p class="text-center p-8 leading-loose mt-8">
     {$t(`common.${detail}`)}
   </p>
 </div>

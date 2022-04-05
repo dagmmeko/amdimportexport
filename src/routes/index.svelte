@@ -132,7 +132,7 @@
 Products section
    -->
 
-<section class="bg-bgOne md:pl-44 pl-20 grid place-items-center py-16 ">
+<section class="bg-bgOne grid place-items-center py-16 ">
   <!-- Import Products -->
   <div class="grid justify-items-stretch">
     <h1 class="text-4xl mb-6 ">{$t('common.importTitle')}</h1>
@@ -189,7 +189,7 @@ Customer Service
   </div>
 
   <div
-    class="bg-bgTwo bg-opacity-20 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:pl-44 pl-20 place-items-center py-16 "
+    class="bg-bgTwo bg-opacity-20 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 place-items-center py-16 "
   >
     <SeriveCard image={vector} icon={community} detail={'social'} />
     <SeriveCard image={vector} icon={message} detail={'communicate'} />
@@ -203,7 +203,7 @@ Reviews
 
 <section
   style="background: linear-gradient(360deg, #ADC1C8 0%, #F1F1F1 100%)"
-  class="md:pl-44 pl-20 py-16 grid place-items-center "
+  class="md:px-44 px-10 py-16 grid place-items-center "
 >
   <h1 class="text-4xl mb-6 place-self-start">{$t('common.reviewTitle')}</h1>
   <hr class="bg-primary h-1 w-48 mb-6 place-self-start" />
