@@ -132,12 +132,12 @@
 Products section
    -->
 
-<section class="bg-bgOne pl-44 py-16 ">
+<section class="bg-bgOne md:pl-44 pl-20 grid place-items-center py-16 ">
   <!-- Import Products -->
   <div class="grid justify-items-stretch">
     <h1 class="text-4xl mb-6 ">{$t('common.importTitle')}</h1>
     <hr class="bg-primary h-1 w-48 mb-6" />
-    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-8">
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
       <Productcard image={yirgacheffe} product={'importProd1'} />
       <Productcard image={sesame} product={'importProd2'} />
       <Productcard image={sunflower} product={'importProd3'} />
@@ -153,10 +153,10 @@ Products section
   </div>
 
   <!-- Export Products -->
-  <div class="grid justify-items-stretch">
-    <h1 class="text-4xl mb-6 ">{$t('common.importTitle')}</h1>
-    <hr class="bg-primary h-1 w-48 mb-6" />
-    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-8">
+  <div class="grid justify-items-stretch mt-24">
+    <h1 class="text-4xl mb-6 ">{$t('common.exportTitle')}</h1>
+    <hr class="bg-primary h-1 w-48" />
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
       <Productcard image={rangrover} product={'exportProd1'} />
       <Productcard image={excavator} product={'exportProd2'} />
       <Productcard image={hansaplast} product={'exportProd3'} />
@@ -189,7 +189,7 @@ Customer Service
   </div>
 
   <div
-    class="bg-bgTwo bg-opacity-20 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 pl-44 pb-24"
+    class="bg-bgTwo bg-opacity-20 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:pl-44 pl-20 place-items-center py-16 "
   >
     <SeriveCard image={vector} icon={community} detail={'social'} />
     <SeriveCard image={vector} icon={message} detail={'communicate'} />
@@ -203,13 +203,13 @@ Reviews
 
 <section
   style="background: linear-gradient(360deg, #ADC1C8 0%, #F1F1F1 100%)"
-  class="pl-44 py-16 "
+  class="md:pl-44 pl-20 py-16 grid place-items-center "
 >
-  <h1 class="text-4xl mb-6 ">{$t('common.reviewTitle')}</h1>
-  <hr class="bg-primary h-1 w-48 mb-6" />
+  <h1 class="text-4xl mb-6 place-self-start">{$t('common.reviewTitle')}</h1>
+  <hr class="bg-primary h-1 w-48 mb-6 place-self-start" />
   <div class="grid md:grid-cols-2 grid-cols-1">
     <p
-      class="p-12 bg-white border-primary border-2 md:w-[35rem] w-[44rem] text-xl text-center leading-loose"
+      class="p-12 bg-white border-primary border-2 md:w-[35rem] lg:w-[44rem] w-auto text-xl text-center leading-loose"
     >
       {$t('common.review')}
     </p>
