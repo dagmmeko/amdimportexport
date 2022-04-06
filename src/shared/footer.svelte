@@ -34,10 +34,10 @@
       </a>
     </div>
     <div class="flex items-center place-self-center pt-8">
-      <h1 class="text-white font-medium text-2xl px-4 ">2022</h1>
+      <h1 class="text-white font-medium text-xl px-4 ">2022</h1>
 
       <img src={copyright} alt="Facebook Link" class="px-2" />
-      <h1 class="text-white font-medium text-2xl px-4 ">
+      <h1 class="text-white font-medium text-xl px-4 ">
         AMD International Trading
       </h1>
     </div>
@@ -45,17 +45,17 @@
   <div class="pl-16 lg:mt-0 mt-16 place-self-center">
     <div class="flex items-center pb-4">
       <img src={phone} alt="" />
-      <h1 class="text-white font-medium text-2xl px-4 ">+251 91 148 0875</h1>
+      <h1 class="text-white font-medium text-xl px-4 ">+251 91 148 0875</h1>
     </div>
     <div class="flex items-center pb-4">
       <img src={email} alt="" />
-      <h1 class="text-white font-medium text-2xl px-4 ">
+      <h1 class="text-white font-medium text-xl px-4 ">
         info@amdimportexport.com
       </h1>
     </div>
     <div class="flex items-center">
       <img src={location} alt="" />
-      <h1 class="text-white font-medium text-2xl px-4 ">
+      <h1 class="text-white font-medium text-xl px-4 ">
         Bad Nauheimer Str. 8 , 61231
       </h1>
     </div>

@@ -10,6 +10,8 @@ const config = {
       }
     },
     screens: {
+      vvvs: '320px',
+      // => @media (min-width: 320px) 
       vvs: '370px',
       // => @media (min-width: 370px)
       vs: '550px',

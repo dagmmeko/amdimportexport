@@ -6,13 +6,13 @@
 </script>
 
 <div
-  class="relative z-0 w-96 bg-white drop-shadow-md mt-32 grid place-content-center"
+  class="relative z-0 sm:w-[30rem] w-[24rem] min-h-[20rem] bg-white drop-shadow-md mt-32 grid place-content-center"
 >
   <div class="relative z-0  grid place-content-center ">
     <img src={image} alt="" />
     <div class="absolute inset-0 z-10 grid place-content-center">
       <div
-        class="h-40 w-40 rounded-full drop-shadow-md bg-white grid place-content-center -my-20"
+        class="h-40 w-40 rounded-full drop-shadow-md bg-white grid place-content-center -mt-24"
       >
         <img src={icon} alt="" class="w-24" />
       </div>

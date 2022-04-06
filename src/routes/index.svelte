@@ -227,6 +227,6 @@ Reviews
 Contact Us 
    -->
 
-<!-- <section id="contact">
+<section id="contact">
   <Contact />
-</section> -->
+</section>
