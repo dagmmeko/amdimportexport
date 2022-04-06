@@ -27,7 +27,7 @@
   import SeriveCard from '../shared/components/service-card.svelte'
   import Productcard from '../shared/components/home-product.svelte'
 
-  import review from '../../static/assets/icons/review.svg'
+  import team from '../../static/assets/images/team.svg'
   import Contact from '../shared/contact.svelte'
 </script>
 
@@ -213,13 +213,13 @@ Reviews
 >
   <h1 class="text-4xl mb-6 place-self-start">{$t('common.reviewTitle')}</h1>
   <hr class="bg-primary h-1 w-48 mb-16 place-self-start" />
-  <div class="grid md:grid-cols-2 grid-cols-1 ">
+  <div class="grid lg:grid-cols-2 grid-cols-1  ">
     <p
-      class="p-12 bg-white border-primary border-2 md:w-[30rem] lg:w-[44rem] w-auto text-xl text-center leading-loose"
+      class="p-12 bg-white border-primary border-2 xl:w-[44rem] lg:w-[38rem] md:w-[44rem]  w-auto text-xl text-center leading-loose"
     >
       {$t('common.review')}
     </p>
-    <img src={review} alt="" class="w-[38rem] h-[24rem] " />
+    <img src={team} alt="" class="h-[27rem] lg:ml-16 lg:mt-0 mt-8 " />
   </div>
 </section>
 
