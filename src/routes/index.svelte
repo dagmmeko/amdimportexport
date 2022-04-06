@@ -69,15 +69,17 @@
     -->
 
 <section class="w-full relative z-0 bg-bgOne grid justify-items-stretch">
-  <div class="relative z-0">
-    <img src={polygon2} alt="" class="-m-16 h-[32rem]" />
-    <div class="absolute inset-0 z-10 ">
+  <div class="absolute -z-30 ">
+    <div class=" relative -mt-12">
+      <img src={polygon2} alt="" class="  h-[32rem]" />
+    </div>
+    <div class="absolute inset-0  ">
       <img src={polygon1} alt="" class="h-[27rem]" />
     </div>
   </div>
 
   <div
-    class="absolute inset-0 z-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:pl-44 pl-24"
+    class="relative inset-0 z-0 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:pl-44 px-24 place-items-center"
   >
     <div
       class="-mt-8 h-96 w-96 bg-white drop-shadow-md grid justify-items-stretch"
@@ -96,7 +98,7 @@
       </p>
     </div>
     <div
-      class="md:-mt-8 sm:mt-8 mt-8 h-96 w-96 bg-white drop-shadow-md grid justify-items-stretch"
+      class="lg:-mt-8 sm:mt-8 mt-8 h-96 w-96 bg-white drop-shadow-md grid justify-items-stretch"
     >
       <img src={feedback} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed">
@@ -105,11 +107,15 @@
     </div>
   </div>
 
-  <div class="grid lg:grid-cols-2 grid-cols-1 pl-44 justify-items-stretch ">
+  <div
+    class="grid lg:grid-cols-2 grid-cols-1 md:pl-44 px-20 justify-items-stretch mt-16 place-items-center"
+  >
     <div>
       <h1 class="text-4xl mb-6">{$t('common.whatTitle')}</h1>
       <hr class="bg-primary h-1 w-48 mb-6" />
-      <p class="lg:w-[44rem] md:w-[50rem] sm:w-[40rem] text-xl leading-loose ">
+      <p
+        class="llg:w-[44rem] lg:w-[35rem] md:w-[44rem] sm:w-[40rem]  text-xl leading-loose "
+      >
         {$t('common.whatDesc')}
       </p>
     </div>
@@ -218,7 +224,7 @@ Reviews
 </section>
 
 <!-- 
-Contact Us
+Contact Us 
    -->
 
 <!-- <section id="contact">
