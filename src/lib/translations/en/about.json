@@ -1,0 +1,50 @@
+{
+    "whoTitle": "Who are we?",
+    "whoDesc": "AMD is an Import-Export trading company with an underlying focus on providing high-quality commodities in an affordable and accessible fashion. With the assurance of providing the highest standards of quality, we collaborate with a diverse range of partners to help them accomplish their goals of economic growth and customer satisfaction. We carry operations with a clear understanding of the complexities of the supply chain to carry forward a seamless process of importing and exporting from anywhere in the world. While we are a Germany-based company, our operations are spread all across Europe with our acquired specialty in agricultural commodities. Our major export operations are directed to Ethiopia.",
+    "whatTitle": "What do we do?",
+    "whatDesc": "We bring forth the best quality products like agricultural commodities, automobiles, machinery, spear parts, cosmetics, personal care products, medical supplies and devices, manufacturing material,  equipment and supplies, construction material, equipment, and industrial plants and machinery to you in an economical way so that your business can thrive in a sustainable manner. We are ardent about offering our clients the best services and keeping their interests as our priority. Each and every product is handled with the utmost care, assuring safe and hygienic packaging. We reiterate continuous quality products and support to our customers.",
+    "whyTitle": "Why are we?",
+    "whyDesc": "With the aim to deliver continuous quality to our clients complemented with social value. We hold social innovation and community building at the core of our values. By promoting and uplifting diverse and inclusive communities we wish to facilitate expertise to various social issues and kindle innovation. Maintaining a safe and healthier aspect of our services and operations is what drives us apart from our competition. We strongly insist on building a community that feels responsible towards the environment and towards sustainability by creating a positive impact in the society and eliminating inequalities.",
+    "workTitle": "Work with us",
+    "workDesc": "We are looking forward to joining hands with partners who are looking for quality assurance and long-term relation-building for their business. We aim to add simplicity and practicality to our operations to create a strong relationship with our clients that fosters trust and accountability. We ensure complete customer satisfaction throughout our service consumption and even beyond that to envisage future partnerships and collaborations.",
+    "howTitle": "How we serve?",
+    "howDesc": "We at AMD have pledged to revitalize the Export-Import industry through incessant innovation and technology. We are passionate about creating a sustainable and supportive export and import environment for our partners to make the best quality products easily accessible to them. We impart our passion and ethics through each and every commodity we bring to you, whether it's agricultural commodities, automobiles, and accessories, or beauty and personal care products.",
+    "compTitle": "Competitive Advantage",
+    "compDesc": "It found its competitive advantage in innovative and diversified services to versatile clients. And you know, when it comes to innovation, it is not about coming up with the most unique idea of providing the most authentic experience in business in the market. Sometimes, it is just about making a simple, but practical twist, or taking a new approach to something that already exists and this is how we will approach our customers.  Because that wasn’t what people needed, we aim at keeping our prices moderate as compared to our competitors, in order to gain more loyal customers.",
+    "missionTitle": "Mission",
+    "missionDesc": {
+        "0": "Its mission is to provide import and export services while ensuring that there is no risk of poor results in the services or financial losses, in order to foster a positive working relationship. "
+    },
+    "visionTitle": "Vision",
+    "visionDesc": {
+        "0": "The main goal is to become the market leader in importing Ethiopian goods to Europe in the next 2 years. We also want to become the market leader in B2C sales from Ethiopia in Germany."
+    },
+    "goalsTitle": "Goals",
+    "goalsDesc": {
+        "0": "Increase the supply of import and export services each year across Germany and Africa.",
+        "1": "Provide financial returns to Import and Export and companies or individuals who partner with us.",
+        "2": "Provide the best and most defined import and export services to loyal customers."
+    },
+    "valuesTitle": "Values",
+    "valuesDesc": {
+        "0": "We are passionate about what we do.",
+        "1": "We sell and restore with purpose.",
+        "2": "We prefer customers` choice",
+        "3": "The sustainability of resourced materials is our priority.",
+        "4": "Exceptional high-quality services for our customers."
+    },
+    "socialTitle": "Social Values",
+    "socialDesc": {
+        "0": "We aim to challenge our partners to combine high-quality services at competitive prices with a community investment strategy that addresses local priorities, fosters social innovation, and supports economic growth.",
+        "1": "In partnership with communities in which we operate, we will identify and deliver engagements that address their specific needs and enable better business and community well-being.",
+        "2": "We will record and measure our social value using the import and export services Framework. Each of the projects we work on will be measured on a monthly or project basis and validated by the  Social Value Portal."
+    },
+    "socialTypes": {
+        "innovation": "Innovation",
+        "invoDesc": "Promoting Social Innovation Investing in diverse and inclusive community networks and leveraging our skills, and expertise to address local issues and facilitate social innovation.",
+        "env": "Environment",
+        "envDesc": "Safeguarding our world by making green services through online mediums and reducing paper use",
+        "social": "Social",
+        "socialDesc": " Healthier, Safer, and More Resilient import and export services communities to have a positive impact on our customer's mental and physical health and reduce inequalities"
+    }
+}

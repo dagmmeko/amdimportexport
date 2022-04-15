@@ -82,7 +82,7 @@
     class="relative inset-0 z-0 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:pl-44 px-24 place-items-center"
   >
     <div
-      class="-mt-8 h-96 w-96 bg-white drop-shadow-md grid justify-items-stretch"
+      class="-mt-8 min-h-[25rem] h-auto w-[26rem] bg-white drop-shadow-md grid justify-items-stretch"
     >
       <img src={who} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed">
@@ -90,7 +90,7 @@
       </p>
     </div>
     <div
-      class="lg:-mt-8 md:-mt-8 sm:mt-8 mt-8 h-96 w-96 bg-primary drop-shadow-md grid justify-items-stretch"
+      class="lg:-mt-8 md:-mt-8 sm:mt-8 mt-8 min-h-[25rem] h-auto w-[26rem] bg-primary drop-shadow-md grid justify-items-stretch"
     >
       <img src={service} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed text-white">
@@ -98,7 +98,7 @@
       </p>
     </div>
     <div
-      class="lg:-mt-8 sm:mt-8 mt-8 h-96 w-96 bg-white drop-shadow-md grid justify-items-stretch"
+      class="lg:-mt-8 sm:mt-8 mt-8 min-h-[25rem] h-auto w-[26rem] bg-white drop-shadow-md grid justify-items-stretch"
     >
       <img src={feedback} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed">
