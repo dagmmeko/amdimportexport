@@ -19,7 +19,7 @@
   import soyaBeans from '../../static/assets/images/Soya-Beans.svg'
 
   import sparePart from '../../static/assets/images/spare-part.svg'
-  import rangrover from '../../static/assets/images/rangrover.svg'
+  import rangerover from '../../static/assets/exports/range-rover.webp'
   import hansaplast from '../../static/assets/images/hansaplast.svg'
   import excavator from '../../static/assets/images/excavator.svg'
 
@@ -144,10 +144,10 @@ Products section
     <h1 class="text-4xl mb-6 ">{$t('common.importTitle')}</h1>
     <hr class="bg-primary h-1 w-48 mb-6" />
     <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
-      <Productcard image={yirgacheffe} product={'importProd1'} />
-      <Productcard image={sesame} product={'importProd2'} />
-      <Productcard image={sunflower} product={'importProd3'} />
-      <Productcard image={soyaBeans} product={'importProd4'} />
+      <Productcard image={yirgacheffe} product={'common.importProd1'} />
+      <Productcard image={sesame} product={'common.importProd2'} />
+      <Productcard image={sunflower} product={'common.importProd3'} />
+      <Productcard image={soyaBeans} product={'common.importProd4'} />
     </div>
     <a href="#contact" class="justify-self-center mt-10">
       <div
@@ -163,10 +163,10 @@ Products section
     <h1 class="text-4xl mb-6 ">{$t('common.exportTitle')}</h1>
     <hr class="bg-primary h-1 w-48" />
     <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
-      <Productcard image={rangrover} product={'exportProd1'} />
-      <Productcard image={excavator} product={'exportProd2'} />
-      <Productcard image={hansaplast} product={'exportProd3'} />
-      <Productcard image={sparePart} product={'exportProd4'} />
+      <Productcard image={rangerover} product={'common.exportProd1'} />
+      <Productcard image={excavator} product={'common.exportProd2'} />
+      <Productcard image={hansaplast} product={'common.exportProd3'} />
+      <Productcard image={sparePart} product={'common.exportProd4'} />
     </div>
     <a href="#contact" class="justify-self-center mt-10">
       <div

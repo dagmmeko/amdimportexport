@@ -30,8 +30,19 @@ const config = ({
             locale: 'de',
             key: 'about',
             loader: async () => (await import('./de/about.json')).default
-
-
+        }, {
+            locale: 'en',
+            key: 'export',
+            loader: async () => (
+                await import('./en/export.json')
+            ).default,
+        },
+        {
+            locale: 'de',
+            key: 'export',
+            loader: async () => (
+                await import('./de/export.json')
+            ).default,
         }
     ],
 });
