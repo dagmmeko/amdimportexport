@@ -43,6 +43,19 @@ const config = ({
             loader: async () => (
                 await import('./de/export.json')
             ).default,
+        }, {
+            locale: 'en',
+            key: 'import',
+            loader: async () => (
+                await import('./en/import.json')
+            ).default,
+        },
+        {
+            locale: 'de',
+            key: 'import',
+            loader: async () => (
+                await import('./de/import.json')
+            ).default,
         }
     ],
 });
