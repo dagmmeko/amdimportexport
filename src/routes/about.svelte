@@ -3,180 +3,210 @@
   import AboutCard from '../shared/components/about-card.svelte'
   import MissionCard from '../shared/components/mission-card.svelte'
 
+  import ValuesCard from '../shared/components/values-card.svelte'
   import { t } from '$lib/translations'
 
   import team from '../../static/assets/images/team.svg'
   import aboutHero from '../../static/assets/images/about-hero.svg'
-  import vector from '../../static/assets/icons/vector.svg'
 
   import polygon1 from '../../static/assets/icons/Polygon1.svg'
   import polygon2 from '../../static/assets/icons/Polygon2.svg'
+  import vision from '../../static/assets/icons/vision.svg'
+  import mission from '../../static/assets/icons/mission.svg'
+  import values from '../../static/assets/icons/values.svg'
+  import goals from '../../static/assets/icons/goals.svg'
+  import businessman from '../../static/assets/icons/businessman.svg'
+  import owner from '../../static/assets/images/owner.png'
 </script>
 
 <!--  
 Hero Section  
  -->
 
-<section class="w-full  relative z-0">
-  <img src={aboutHero} class="object-cover  w-full" alt="Landing background" />
-  <div
-    class="absolute inset-0 z-10 bg-black bg-opacity-70 flex justify-items-stretch "
+<section class="w-full  relative z-0 md:h-96 h-72">
+  <img
+    src={aboutHero}
+    class="object-cover md:h-96 h-72  w-full"
+    alt="Landing background"
   />
+  <div
+    class="absolute inset-0 z-10"
+    style="background: linear-gradient(90deg, #8EAAB4 31.01%, rgba(142, 170, 180, 0) 122.19%);"
+  >
+    <h1 class="md:pl-44 pl-32 md:pt-44 pt-32 text-white text-5xl font-bold">
+      About us
+    </h1>
+    <h1 class="md:pl-44 pl-32 pt-4 text-white text-lg">
+      AMD International Import and Export
+    </h1>
+  </div>
 </section>
 
 <!-- 
 All about us Section
  -->
-
-<section
-  class="grid place-items-center"
+<div
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.64) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
-  <div
-    class="grid grid-cols-4 gap-11 bg-white -mt-16 z-20 mx-48 p-8 drop-shadow-md"
+  <section
+    class="lg:grid lg:pl-0 vs:pl-24 pl-16 grid-cols-2 justify-items-stretch pt-24"
   >
     <img
-      src={aboutHero}
+      src={owner}
       alt="Manager/Owner"
-      class="rounded-full h-64 w-64 object-cover border-primary border-4 ml-16 "
+      class="xl:h-[25rem] h-[23rem] xl:w-[36rem] lg:w-[30rem] rounded-lg drop-shadow-md object-cover justify-self-center"
     />
-    <div class="col-span-3 mr-24">
-      <h1 class="text-2xl mb-8 ">{$t('about.whoTitle')}</h1>
-      <p class="leading-loose">
-        {$t('about.whoDesc')}
+    <div
+      class=" h-[30rem] xl:w-[50rem] lg:w-[40rem] md:w-[50rem] w-auto md:pr-0 pr-16 lg:mt-0 mt-8 "
+    >
+      <h1 class="text-4xl mb-8 text-primary font-bold  ">
+        {$t('about.whoTitle')}
+      </h1>
+      <div class="flex  drop-shadow-md">
+        <div class="bg-primary flex-none w-1 mr-4" />
+
+        <p class="leading-loose bg-white p-8 rounded-lg">
+          {$t('about.whoDesc')}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+Missions section
+ -->
+
+  <section class="llg:grid grid-cols-2 md:mt-0 vs:mt-16 vvs:mt-48 ">
+    <div class="relative z-0  h-[45rem] xl:w-auto llg:w-[45rem] w-auto">
+      <img src={team} alt="" class="w-full  h-full object-cover" />
+      <div class="absolute inset-0 z-10  bg-primary bg-opacity-60 grid ">
+        <MissionCard
+          icon={mission}
+          title={$t('about.missionTitle')}
+          desc="missionDesc"
+          color="blue"
+        />
+        <MissionCard
+          icon={vision}
+          title={$t('about.visionTitle')}
+          desc="visionDesc"
+          color="orange"
+        />
+      </div>
+    </div>
+
+    <div class="grid">
+      <ValuesCard
+        icon={goals}
+        title={$t('about.goalsTitle')}
+        desc="goalsDesc"
+        color="orange"
+        length={3}
+      />
+      <ValuesCard
+        icon={values}
+        title={$t('about.valuesTitle')}
+        desc="valuesDesc"
+        color="blue"
+        length={5}
+      />
+    </div>
+  </section>
+</div>
+
+<section
+  style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.64) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
+>
+  <div class="relative z-0">
+    <img src={aboutHero} alt="" class="w-full sm:h-96 h-[28rem] object-cover" />
+    <div
+      class="absolute inset-0 z-10 bg-black bg-opacity-80 grid justify-items-stretch"
+    >
+      <h1
+        class="text-white md:text-3xl text-2xl font-bold justify-self-center pt-16"
+      >
+        {$t('about.compTitle')}
+      </h1>
+      <p
+        class="text-white justify-self-center text-center xl:px-72 lg:px-36 sm:px-16 px-4 leading-loose md:text-lg text-base"
+      >
+        {$t('about.compDesc')}
       </p>
     </div>
   </div>
-  <div class="grid grid-cols-2 gap-12 my-16 ">
+
+  <div class="grid lg:grid-cols-2 place-items-center py-16  ">
     <AboutCard
-      color="blue"
-      title={$t('about.whatTitle')}
-      desc={$t('about.whatDesc')}
-    />
-    <AboutCard
+      title={$t('about.howTitle')}
+      desc={$t('about.howDesc')}
       color="orange"
-      title={$t('about.whyTitle')}
-      desc={$t('about.whyDesc')}
-    />
-    <img
-      src={team}
-      alt="team"
-      class="w-[40rem] h-[26rem] object-cover object-top "
     />
     <AboutCard
-      color="orange"
-      title={$t('about.whyTitle')}
-      desc={$t('about.whyDesc')}
-    />
-    <AboutCard
-      color="blue"
       title={$t('about.workTitle')}
       desc={$t('about.workDesc')}
-    />
-    <img
-      src={team}
-      alt="team"
-      class="w-[40rem] h-[26rem] object-cover object-top "
+      color="blue"
     />
   </div>
-</section>
 
-<!-- 
-Why us section
- -->
+  <section class="w-full relative z-0 grid justify-items-stretch">
+    <div class="absolute -z-30 ">
+      <div class=" relative -mt-12">
+        <img src={polygon2} alt="" class="  h-[32rem]" />
+      </div>
+      <div class="absolute inset-0  ">
+        <img src={polygon1} alt="" class="h-[27rem]" />
+      </div>
+    </div>
 
-<section>
-  <div class="w-full  relative z-0">
-    <img
-      src={aboutHero}
-      class="object-cover  w-full"
-      alt="Landing background"
-    />
     <div
-      class="absolute inset-0 z-10 bg-black bg-opacity-70 justify-items-stretch "
+      class="relative inset-0 z-0 grid grid-cols-3  lg:pl-44 px-24 place-items-center"
     >
-      <h1 class="text-white text-2xl">{$t('about.compTitle')}</h1>
-      <p class="text-white ">{$t('about.compDesc')}</p>
+      <img src={businessman} alt="" />
+      <div class="bg-white drop-shadow-md border-primary border-2 rounded-md ">
+        <h1
+          class="pl-8 py-8 text-3xl font-semibold text-primary drop-shadow-md"
+        >
+          {$t('about.socialTitle')}
+        </h1>
+        {#each new Array(3) as _, index}
+          <li class="px-16 leading-loose pb-8">
+            {$t(`about.socialDesc.${index}`)}
+          </li>
+        {/each}
+      </div>
+      <div class="pl-16">
+        <div class="bg-primary drop-shadow-md ">
+          <h1 class="pl-8 py-4 text-2xl font-semibold text-white">
+            {$t('about.socialTypes.innovation')}
+          </h1>
+          <p class="px-8 leading-loose pb-8 text-white">
+            {$t('about.socialTypes.invoDesc')}
+          </p>
+        </div>
+        <div class="bg-secondary mt-4 drop-shadow-md">
+          <h1 class="pl-8 py-4 text-2xl font-semibold text-white">
+            {$t('about.socialTypes.env')}
+          </h1>
+          <p class="px-8 leading-loose pb-8 text-white">
+            {$t('about.socialTypes.envDesc')}
+          </p>
+        </div>
+        <div class="bg-primary mt-4 drop-shadow-md">
+          <h1 class="pl-8 py-4 text-2xl font-semibold text-white">
+            {$t('about.socialTypes.social')}
+          </h1>
+          <p class="px-8 leading-loose pb-8 text-white">
+            {$t('about.socialTypes.socialDesc')}
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="w-full relative z-0 ">
-    <img
-      src={vector}
-      class="object-cover absolute -z-30  w-full"
-      alt="Landing background"
-    />
-    <div class="relative inset-0 z-0  grid grid-cols-2 px-24 ">
-      <MissionCard
-        title={$t('about.missionTitle')}
-        desc="missionDesc"
-        color="blue"
-        length={1}
-      />
-      <MissionCard
-        title={$t('about.visionTitle')}
-        desc="visionDesc"
-        color="orange"
-        length={1}
-      />
-      <MissionCard
-        title={$t('about.goalsTitle')}
-        desc="goalsDesc"
-        color="blue"
-        length={3}
-      />
-      <MissionCard
-        title={$t('about.valuesTitle')}
-        desc="valuesDesc"
-        color="orange"
-        length={4}
-      />
-    </div>
-  </div>
+  </section>
 </section>
 
 <!-- 
 Social value section
  -->
-
-<section class="w-full relative z-0 bg-bgOne grid justify-items-stretch">
-  <div class="absolute -z-30 ">
-    <div class=" relative -mt-12">
-      <img src={polygon2} alt="" class="  h-[32rem]" />
-    </div>
-    <div class="absolute inset-0  ">
-      <img src={polygon1} alt="" class="h-[27rem]" />
-    </div>
-  </div>
-
-  <div
-    class="relative inset-0 z-0 grid  lg:pl-44 px-24 place-items-center"
-    style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.64) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
-  >
-    <div class="grid grid-cols-2 ">
-      <img src={team} alt="" />
-      <div>
-        <h1>{$t('about.socialTitle')}</h1>
-        {#each new Array(3) as _, index}
-          <li>{$t(`about.socialDesc.${index}`)}</li>
-        {/each}
-      </div>
-    </div>
-
-    <div class="grid grid-cols-2 ">
-      <div>
-        <h1>{$t('about.socialTypes.innovation')}</h1>
-        <p>{$t('about.socialTypes.invoDesc')}</p>
-        <h1>{$t('about.socialTypes.env')}</h1>
-        <p>{$t('about.socialTypes.envDesc')}</p>
-        <h1>{$t('about.socialTypes.social')}</h1>
-        <p>{$t('about.socialTypes.socialDesc')}</p>
-      </div>
-
-      <img src={team} alt="" />
-    </div>
-  </div>
-</section>
 
 <section>
   <Contact />
