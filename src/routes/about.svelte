@@ -57,12 +57,12 @@ All about us Section
       class="xl:h-[25rem] h-[23rem] xl:w-[36rem] lg:w-[30rem] rounded-lg drop-shadow-md object-cover justify-self-center"
     />
     <div
-      class=" h-[30rem] xl:w-[50rem] lg:w-[40rem] md:w-[50rem] w-auto md:pr-0 pr-16 lg:mt-0 mt-8 "
+      class=" md:h-[30rem] sm:h-[25rem] h-auto xl:w-[50rem] lg:w-[40rem] md:w-[50rem] w-auto md:pr-0 pr-16 lg:mt-0 mt-8 "
     >
       <h1 class="text-4xl mb-8 text-primary font-bold  ">
         {$t('about.whoTitle')}
       </h1>
-      <div class="flex  drop-shadow-md">
+      <div class="flex drop-shadow-md">
         <div class="bg-primary flex-none w-1 mr-4" />
 
         <p class="leading-loose bg-white p-8 rounded-lg">
@@ -159,9 +159,9 @@ Missions section
     </div>
 
     <div
-      class="relative inset-0 z-0 grid grid-cols-3  lg:pl-44 px-24 place-items-center"
+      class="relative inset-0 z-0 grid lg:grid-cols-3 sm:grid-cols-2 lg:pl-44 vvs:px-24 px-12 place-items-center"
     >
-      <img src={businessman} alt="" />
+      <img src={businessman} alt="" class="sm:block hidden" />
       <div class="bg-white drop-shadow-md border-primary border-2 rounded-md ">
         <h1
           class="pl-8 py-8 text-3xl font-semibold text-primary drop-shadow-md"
@@ -174,7 +174,7 @@ Missions section
           </li>
         {/each}
       </div>
-      <div class="pl-16">
+      <div class="sm:pl-16 pl-0 lg:my-0 my-8 lg:col-span-1 col-span-2">
         <div class="bg-primary drop-shadow-md ">
           <h1 class="pl-8 py-4 text-2xl font-semibold text-white">
             {$t('about.socialTypes.innovation')}
