@@ -20,8 +20,12 @@
 <!-- Hero Section  -->
 
 <section>
-  <div class="w-full  relative z-0">
-    <img src={hero} class="object-cover w-full" alt="Landing background" />
+  <div class="w-full  relative z-0 sm:h-auto h-56">
+    <img
+      src={hero}
+      class="object-cover w-full sm:h-auto h-56"
+      alt="Landing background"
+    />
     <div
       class="absolute inset-0 z-10 bg-black bg-opacity-70 flex justify-items-stretch "
     />
@@ -32,28 +36,34 @@
     <h1
       class="text-2xl font-bold text-white md:col-span-2 col-span-1 llg:pl-44 md:pl-24 pl-12 sm:pb-0 pb-4"
     >
-      {$t('export.export')}
+      {$t('import.import')}
     </h1>
 
     <div
       class="vs:grid pl-10 vs:pl-0 justify-items-end grid-flow-col llg:col-start-4 md:col-start-3 col-span-3 llg:pr-44 pr-24 "
     >
-      <div class="flex gap-7 flex-wrap items-center">
+      <div class="flex lg:gap-7 gap-5 flex-wrap items-center">
         <img src={hand} alt="icon" class="col-span-1" />
         <h1 class="text-lg text-white font-semibold col-span-3">
-          {$t('export.linkMedical')}
+          {$t('import.linkCoffee')}
         </h1>
       </div>
-      <div class="flex gap-7 flex-wrap items-center">
+      <div class="flex lg:gap-7 gap-5 flex-wrap items-center">
         <img src={hand} alt="icon" class="col-span-1" />
         <h1 class="text-lg text-white font-semibold col-span-3">
-          {$t('export.linkMachineries')}
+          {$t('import.linkOil')}
         </h1>
       </div>
-      <div class="flex gap-7 flex-wrap items-center">
+      <div class="flex lg:gap-7 gap-5 flex-wrap items-center">
         <img src={hand} alt="icon" class="col-span-1" />
         <h1 class="text-lg text-white font-semibold col-span-3">
-          {$t('export.linkCar')}
+          {$t('import.linkHoney')}
+        </h1>
+      </div>
+      <div class="flex lg:gap-7 gap-5 flex-wrap items-center">
+        <img src={hand} alt="icon" class="col-span-1" />
+        <h1 class="text-lg text-white font-semibold col-span-3">
+          {$t('import.linkSpices')}
         </h1>
       </div>
     </div>
@@ -63,51 +73,60 @@
 
 Title to Coffee
  -->
-
-<div
-  class="relative z-0 bg-white llg:w-[80rem] sm:w-[60rem] w-auto llg:h-[17rem] h-[21rem] drop-shadow-md rounded-xl mt-24 ml-52 "
+<section
+  class="pt-24 grid sm:px-0 px-16 "
+  style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.41) 36.98%, rgba(29, 160, 236, 0.1) 100%)"
 >
-  <div class=" absolute inset-0 z-10 grid grid-cols-3  ">
+  <div
+    class="place-self-center grid vs:grid-cols-3 bg-white llg:w-[85rem] lg:w-[70rem] md:w-[60rem] sm:w-[50rem] w-auto lg:h-[18rem] md:h-[20rem] sm:h-[24rem] h-auto  drop-shadow-md rounded-xl "
+  >
     <img
       src={spare}
       alt=""
-      class=" w-60 h-60 object-cover -m-9 rounded-xl drop-shadow-xl"
+      class="object-cover rounded-xl drop-shadow-xl -m-9 lg:w-72 lg:h-72 vs:w-60 vs:h-60 h-48 w-full"
     />
     <h1
-      class="bg-primary w-80 py-4 mx-8  h-16 text-white text-2xl font-semibold llg:-ml-64 lg:-ml-44 text-center"
+      class="bg-primary text-white text-2xl font-semibold text-center lg:-ml-56 md:-ml-44 sm:-ml-32 vs:-ml-14 vs:mt-0 mt-9 w-80 py-4 h-16"
     >
-      {$t('export.spareTitle')}
+      {$t('import.coffeeTitle')}
     </h1>
-    <p class="px-12 leading-loose text-lg pt-24 llg:-ml-[40rem] -ml-[27rem]">
-      {$t('export.spareDesc')}
+    <p
+      class="leading-loose sm:pt-24 vs:pt-24 pt-8 pb-8 llg:-ml-[40rem] lg:-ml-[32rem] md:-ml-[28rem] sm:-ml-[22rem] vs:-ml-[18rem] px-12 "
+    >
+      {$t('import.coffeeDesc')}
     </p>
   </div>
-</div>
-<!-- 
+  <!-- 
 
 Coffee List 
  -->
 
-<div class="grid place-items-center py-16">
-  <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
-    <CoffeeCard image={guji} product={'Guji'} para={'import.cofProdDes1'} />
-    <CoffeeCard
-      image={yirgachefe}
-      product={'Yirgachefe'}
-      para={'import.cofProdDes2'}
-    />
-    <CoffeeCard image={sidamo} product={'Sidamo'} para={'import.cofProdDes3'} />
-    <CoffeeCard image={limu} product={'Limu'} para={'import.cofProdDes4'} />
-    <CoffeeCard
-      image={lekemeti}
-      product={'Lekemeti'}
-      para={'import.cofProdDes5'}
-    />
+  <div class="grid place-items-center pb-8">
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
+      <CoffeeCard image={guji} product={'Guji'} para={'import.cofProdDes1'} />
+      <CoffeeCard
+        image={yirgachefe}
+        product={'Yirgachefe'}
+        para={'import.cofProdDes2'}
+      />
+      <CoffeeCard
+        image={sidamo}
+        product={'Sidamo'}
+        para={'import.cofProdDes3'}
+      />
+      <CoffeeCard image={limu} product={'Limu'} para={'import.cofProdDes4'} />
+      <CoffeeCard
+        image={lekemeti}
+        product={'Lekemeti'}
+        para={'import.cofProdDes5'}
+      />
 
-    <CoffeeCard image={jimma} product={'Jimma'} para={'import.cofProdDes6'} />
-    <CoffeeCard image={harar} product={'Harar'} para={'import.cofProdDes6'} />
+      <CoffeeCard image={jimma} product={'Jimma'} para={'import.cofProdDes6'} />
+      <CoffeeCard image={harar} product={'Harar'} para={'import.cofProdDes6'} />
+    </div>
   </div>
-</div>
+</section>
+
 <!-- 
 Other Imports -->
 
@@ -135,14 +154,14 @@ Other Imports -->
 </div>
 
 <section
-  class="place-items-center py-16 grid lg:grid-cols-5 sm:grid-cols-2 grid-cols-1 gap-4"
+  class="place-items-center py-16 grid llg:grid-cols-5 md:grid-cols-3 vs:grid-cols-2 gap-4"
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.41) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
-  <ImportCard image={spare} product={'import.prodTitle1'} />
-  <ImportCard image={spare} product={'import.prodTitle1'} />
-  <ImportCard image={spare} product={'import.prodTitle1'} />
-  <ImportCard image={spare} product={'import.prodTitle1'} />
-  <ImportCard image={spare} product={'import.prodTitle1'} />
+  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
+  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
+  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
+  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
+  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
 </section>
 
 <Contact />

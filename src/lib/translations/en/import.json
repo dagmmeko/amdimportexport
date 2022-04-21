@@ -1,8 +1,9 @@
 {
-    "import": "Coffee",
-    "linkMedical": "Oil Crops",
-    "linkMachineries": "Honey",
-    "linkCar": "Spices",
+    "import": "Import Products",
+    "linkCoffee": "Coffee",
+    "linkOil": "Oil Crops",
+    "linkHoney": "Honey",
+    "linkSpices": "Spices",
     "coffeeTitle": "Coffee",
     "coffeeDesc": "We provide a Natural Organically grown coffee, having the true characteristic flavor to pass through for remarkable flavor. We have variaty of coffee from all over Ethiopia. From, Guji, Smooth and sweet with tart citric acidity; winey berry flavors with a floral aftertaste. It is rightfully called highland coffee due to its lush landscape. To,  the unique combination of Sundried Sidamo Grade 4, which combines the fruity notes of cherry and peach with the subtle sweetness of caramel to create the perfect cup of java. ",
     "cofProdDes1": "Smooth and sweet with tart citric acidity; winey berry flavors with a floral aftertaste.",
