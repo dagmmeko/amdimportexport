@@ -82,7 +82,7 @@
     class="relative inset-0 z-0 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:pl-44 px-24 place-items-center"
   >
     <div
-      class="-mt-8 min-h-[25rem] h-auto w-[26rem] bg-white drop-shadow-md grid justify-items-stretch"
+      class="-mt-8 min-h-[25rem] h-auto llg:w-[26rem] lg:w-[22rem] w-[26rem] bg-white drop-shadow-md grid justify-items-stretch"
     >
       <img src={who} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed">
@@ -90,7 +90,7 @@
       </p>
     </div>
     <div
-      class="lg:-mt-8 md:-mt-8 sm:mt-8 mt-8 min-h-[25rem] h-auto w-[26rem] bg-primary drop-shadow-md grid justify-items-stretch"
+      class="lg:-mt-8 md:-mt-8 sm:mt-8 mt-8 min-h-[25rem] h-auto llg:w-[26rem] lg:w-[22rem] w-[26rem] bg-primary drop-shadow-md grid justify-items-stretch"
     >
       <img src={service} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed text-white">
@@ -98,7 +98,7 @@
       </p>
     </div>
     <div
-      class="lg:-mt-8 sm:mt-8 mt-8 min-h-[25rem] h-auto w-[26rem] bg-white drop-shadow-md grid justify-items-stretch"
+      class="lg:-mt-8 sm:mt-8 mt-8 min-h-[25rem] h-auto llg:w-[26rem] lg:w-[22rem] w-[26rem] bg-white drop-shadow-md grid justify-items-stretch "
     >
       <img src={feedback} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed">
@@ -114,7 +114,7 @@
       <h1 class="text-4xl mb-6">{$t('common.whatTitle')}</h1>
       <hr class="bg-primary h-1 w-48 mb-6" />
       <p
-        class="llg:w-[44rem] lg:w-[35rem] md:w-[44rem] sm:w-[40rem]  text-xl leading-loose "
+        class="xl:w-[44rem] llg:w-[40rem] lg:w-[35rem] md:w-[44rem] w-auto  text-xl leading-loose "
       >
         {$t('common.whatDesc')}
       </p>
@@ -209,17 +209,23 @@ Reviews
 
 <section
   style="background: linear-gradient(360deg, #ADC1C8 0%, #F1F1F1 100%)"
-  class="md:px-44 px-10 py-16 grid place-items-center "
+  class="vs:px-24 px-12 py-16 grid place-items-center "
 >
-  <h1 class="text-4xl mb-6 place-self-start">{$t('common.reviewTitle')}</h1>
-  <hr class="bg-primary h-1 w-48 mb-16 place-self-start" />
-  <div class="grid lg:grid-cols-2 grid-cols-1  ">
+  <h1 class="text-4xl mb-6 place-self-start md:pl-24 pl-12">
+    {$t('common.reviewTitle')}
+  </h1>
+  <hr class="bg-primary h-1 w-56 mb-16 place-self-start md:ml-24 ml-12" />
+  <div class="grid lg:grid-cols-2 grid-cols-1 place-items-center ">
     <p
-      class="p-12 bg-white border-primary border-2 xl:w-[44rem] lg:w-[38rem] md:w-[44rem]  w-auto text-xl text-center leading-loose"
+      class="p-12 bg-white border-primary border-2 xl:w-[44rem] lg:w-[40rem] sm:w-[45rem] vs:w-[35rem] w-auto text-xl text-center leading-loose"
     >
       {$t('common.review')}
     </p>
-    <img src={team} alt="" class="h-[27rem] lg:ml-16 lg:mt-0 mt-8 " />
+    <img
+      src={team}
+      alt=""
+      class="llg:h-[25rem] h-[29rem] lg:mt-0 mt-8 rounded-md shadow-lg object-cover "
+    />
   </div>
 </section>
 
