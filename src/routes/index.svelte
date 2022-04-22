@@ -44,13 +44,15 @@
   <div
     class="absolute inset-0 z-10 bg-black bg-opacity-70 flex justify-items-stretch "
   >
-    <div class="self-center md:pl-36 pl-16">
+    <div class="self-center md:pl-36 pl-10">
       <h1
-        class="lg:leading-relaxed md:leading-relaxed leading-relaxed text-white font-sans font-light lg:w-[40rem] md:w-[30rem] w-[23rem] lg:text-6xl md:text-5xl text-4xl"
+        class="leading-relaxed text-white font-sans font-light lg:w-[30rem] md:w-[25rem] w-auto md:pr-0 pr-12 lg:text-5xl md:text-4xl text-3xl"
       >
         {$t('common.landTitle')}
       </h1>
-      <p class="text-xl sm:w-[34rem] w-[24rem] text-white mt-8 leading-loose">
+      <p
+        class="md:text-xl text-lg sm:w-[34rem] w-auto sm:pr-0 pr-12 text-white mt-8 leading-loose"
+      >
         {$t('common.landDesc')}
       </p>
       <a href="#contact" class="">
@@ -70,19 +72,19 @@
 
 <section class="w-full relative z-0 bg-bgOne grid justify-items-stretch">
   <div class="absolute -z-30 ">
-    <div class=" relative -mt-12">
-      <img src={polygon2} alt="" class="  h-[32rem]" />
+    <div class=" relative -mt-10">
+      <img src={polygon2} alt="" class="  h-[25rem]" />
     </div>
     <div class="absolute inset-0  ">
-      <img src={polygon1} alt="" class="h-[27rem]" />
+      <img src={polygon1} alt="" class="h-[20rem]" />
     </div>
   </div>
 
   <div
-    class="relative inset-0 z-0 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:pl-44 px-24 place-items-center"
+    class="relative inset-0 z-0 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center lg:px-0 sm:px-12 vs:px-24 px-8"
   >
     <div
-      class="-mt-8 min-h-[25rem] h-auto llg:w-[26rem] lg:w-[22rem] w-[26rem] bg-white drop-shadow-md grid justify-items-stretch"
+      class="-mt-16 md:h-[26rem] h-auto xl:w-[24rem] llg:w-[20rem] lg:w-[18rem] md:w-[20rem] w-auto bg-white drop-shadow-md grid justify-items-stretch"
     >
       <img src={who} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed">
@@ -90,7 +92,7 @@
       </p>
     </div>
     <div
-      class="lg:-mt-8 md:-mt-8 sm:mt-8 mt-8 min-h-[25rem] h-auto llg:w-[26rem] lg:w-[22rem] w-[26rem] bg-primary drop-shadow-md grid justify-items-stretch"
+      class="lg:-mt-16 md:-mt-16 sm:mt-8 mt-8 md:h-[26rem] h-auto  xl:w-[24rem] llg:w-[20rem] lg:w-[18rem] md:w-[20rem] w-auto bg-primary drop-shadow-md grid justify-items-stretch"
     >
       <img src={service} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed text-white">
@@ -98,7 +100,7 @@
       </p>
     </div>
     <div
-      class="lg:-mt-8 sm:mt-8 mt-8 min-h-[25rem] h-auto llg:w-[26rem] lg:w-[22rem] w-[26rem] bg-white drop-shadow-md grid justify-items-stretch "
+      class="lg:-mt-16 sm:mt-8 mt-8 md:h-[26rem] h-auto xl:w-[24rem] llg:w-[20rem] lg:w-[18rem] md:w-[20rem] w-auto bg-white drop-shadow-md grid justify-items-stretch "
     >
       <img src={feedback} alt="Who icon" class="justify-self-center pt-10" />
       <p class="text-center p-8 leading-relaxed">
@@ -107,14 +109,12 @@
     </div>
   </div>
 
-  <div
-    class="grid lg:grid-cols-2 grid-cols-1 md:pl-44 px-20 justify-items-stretch mt-16 place-items-center"
-  >
+  <div class="grid lg:grid-cols-2 grid-cols-1 px-16  mt-16 place-items-center">
     <div>
       <h1 class="text-4xl mb-6">{$t('common.whatTitle')}</h1>
       <hr class="bg-primary h-1 w-48 mb-6" />
       <p
-        class="xl:w-[44rem] llg:w-[40rem] lg:w-[35rem] md:w-[44rem] w-auto  text-xl leading-loose "
+        class="xl:w-[40rem] llg:w-[30rem] lg:w-[28rem] md:w-[44rem] w-auto  text-base text-justify leading-loose "
       >
         {$t('common.whatDesc')}
       </p>
@@ -122,7 +122,7 @@
     <img
       src={tractor}
       alt=""
-      class="w-[41rem] h-[26rem] object-cover self-center lg:mt-0 mt-8"
+      class="xl:w-[33rem] llg:w-[30rem] lg:w-[25rem] md:w-auto xl:h-[20rem] llg:h-[23rem] h-[26rem] object-cover self-center lg:mt-0 mt-8 drop-shadow-md rounded-md"
     />
   </div>
 
@@ -138,12 +138,12 @@
 Products section
    -->
 
-<section class="bg-bgOne grid place-items-center py-16 ">
+<section class="bg-bgOne grid place-items-center py-16 px-8 ">
   <!-- Import Products -->
-  <div class="grid justify-items-stretch">
-    <h1 class="text-4xl mb-6 ">{$t('common.importTitle')}</h1>
-    <hr class="bg-primary h-1 w-48 mb-6" />
-    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
+  <div class="grid justify-items-stretch ">
+    <h1 class="text-3xl mb-6 ">{$t('common.importTitle')}</h1>
+    <hr class="bg-primary h-1 w-44 mb-6" />
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6  ">
       <Productcard image={yirgacheffe} product={'common.importProd1'} />
       <Productcard image={sesame} product={'common.importProd2'} />
       <Productcard image={sunflower} product={'common.importProd3'} />
@@ -159,10 +159,10 @@ Products section
   </div>
 
   <!-- Export Products -->
-  <div class="grid justify-items-stretch mt-24">
-    <h1 class="text-4xl mb-6 ">{$t('common.exportTitle')}</h1>
-    <hr class="bg-primary h-1 w-48" />
-    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
+  <div class="grid justify-items-stretch mt-12">
+    <h1 class="text-3xl mb-6 ">{$t('common.exportTitle')}</h1>
+    <hr class="bg-primary h-1 w-44 mb-6" />
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 ">
       <Productcard image={rangerover} product={'common.exportProd1'} />
       <Productcard image={excavator} product={'common.exportProd2'} />
       <Productcard image={hansaplast} product={'common.exportProd3'} />
@@ -177,57 +177,57 @@ Products section
     </a>
   </div>
 </section>
-
-<!-- 
-Customer Service
- -->
-
-<section class="">
-  <div class="relative z-0 h-56">
-    <img src={coffeehands} alt="" class="w-full h-56 object-cover" />
-    <div
-      class="absolute inset-0 z-10 bg-black bg-opacity-80 grid justify-items-stretch"
-    >
-      <h1 class="text-white text-5xl justify-self-center self-center">
-        {$t('common.customer')}
-      </h1>
-    </div>
-  </div>
-
-  <div
-    class="bg-bgTwo bg-opacity-20 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 place-items-center py-16 "
-  >
-    <SeriveCard image={vector} icon={community} detail={'social'} />
-    <SeriveCard image={vector} icon={message} detail={'communicate'} />
-    <SeriveCard image={vector} icon={handshake} detail={'partner'} />
-  </div>
-</section>
-
-<!-- 
-Reviews
-  -->
-
-<section
-  style="background: linear-gradient(360deg, #ADC1C8 0%, #F1F1F1 100%)"
-  class="vs:px-24 px-12 py-16 grid place-items-center "
+<div
+  style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.64) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
-  <h1 class="text-4xl mb-6 place-self-start md:pl-24 pl-12">
-    {$t('common.reviewTitle')}
-  </h1>
-  <hr class="bg-primary h-1 w-56 mb-16 place-self-start md:ml-24 ml-12" />
-  <div class="grid lg:grid-cols-2 grid-cols-1 place-items-center ">
-    <p
-      class="p-12 bg-white border-primary border-2 xl:w-[44rem] lg:w-[40rem] sm:w-[45rem] vs:w-[35rem] w-auto text-xl text-center leading-loose"
+  <!-- 
+  Customer Service
+   -->
+
+  <section class="">
+    <div class="relative z-0 h-56">
+      <img src={coffeehands} alt="" class="w-full h-56 object-cover" />
+      <div
+        class="absolute inset-0 z-10 bg-black bg-opacity-80 grid justify-items-stretch"
+      >
+        <h1 class="text-white text-3xl justify-self-center self-center">
+          {$t('common.customer')}
+        </h1>
+      </div>
+    </div>
+
+    <div
+      class="grid llg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-items-center pb-8 "
     >
-      {$t('common.review')}
-    </p>
-    <img
-      src={team}
-      alt=""
-      class="llg:h-[25rem] h-[29rem] lg:mt-0 mt-8 rounded-md shadow-lg object-cover "
-    />
-  </div>
-</section>
+      <SeriveCard image={vector} icon={community} detail={'social'} />
+      <SeriveCard image={vector} icon={message} detail={'communicate'} />
+      <SeriveCard image={vector} icon={handshake} detail={'partner'} />
+    </div>
+  </section>
+
+  <!-- 
+  Reviews
+    -->
+
+  <section class="llg:px-24 px-12 py-16 grid place-items-center ">
+    <h1 class="text-3xl mb-6 place-self-start md:pl-24 pl-12">
+      {$t('common.reviewTitle')}
+    </h1>
+    <hr class="bg-primary h-1 w-44 mb-16 place-self-start md:ml-24 ml-12" />
+    <div class="grid lg:grid-cols-2 grid-cols-1 place-items-center ">
+      <p
+        class="px-8 py-6 bg-white border-primary border-2 xl:w-[36rem] llg:w-[30rem] w-full text-lg text-justify leading-loose"
+      >
+        {$t('common.review')}
+      </p>
+      <img
+        src={team}
+        alt=""
+        class="xl:h-[19rem] llg:h-[21rem] h-[24rem] lg:w-[25rem] vs:w-[30rem] w-full lg:mt-0 mt-8 rounded-md shadow-lg object-cover "
+      />
+    </div>
+  </section>
+</div>
 
 <!-- 
 Contact Us 

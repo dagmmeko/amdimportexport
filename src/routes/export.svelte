@@ -80,32 +80,36 @@
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.41) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
   <!-- Product Category  -->
-  <section class="pt-24 sm:grid grid-cols-3 place-items-center">
+  <section class="pt-24 grid lg:grid-cols-3 place-items-center">
     <div
-      class="relative z-0 bg-primary llg:w-96 w-72 col-span-1 drop-shadow-md rounded-xl"
+      class="relative z-0 bg-primary llg:w-96 lg:w-80 md:w-[55rem] w-auto md:mx-0 mx-24 lg:col-span-1 drop-shadow-md rounded-xl"
     >
-      <div class="llg:pt-96 pt-72 pb-10 ">
-        <h1 class="text-center text-white text-2xl font-bold mb-6">
+      <div class="llg:pt-96 lg:pt-80 pt-10 pb-10 ">
+        <h1
+          class="lg:text-center lg:pl-0 pl-60 text-white text-2xl font-bold mb-6"
+        >
           {$t('export.categoryTitle')}
         </h1>
-        <p class="text-white px-8 text-lg text-center leading-loose">
+        <p
+          class="text-white lg:px-8 pl-60 pr-20 text-lg lg:text-center leading-loose"
+        >
           {$t('export.categoryDesc')}
         </p>
       </div>
       <img
         src={types}
         alt=""
-        class="absolute inset-0 z-10 llg:w-96 w-72 llg:h-96 h-72 -m-9 rounded-xl drop-shadow-xl"
+        class="absolute inset-0 z-10 llg:w-96 lg:w-80 w-60 llg:h-96 lg:h-80 h-60 -m-9 rounded-xl drop-shadow-xl"
       />
     </div>
 
     <!-- Cars and Spare parts  -->
 
-    <div class="col-span-2 sm:pt-0 pt-16 ">
+    <div class="lg:col-span-2 pt-0 lg:mt-0 mt-24 grid">
       <div
-        class="relative z-0 bg-white llg:w-[66rem] sm:w-[60rem] w-auto h-[17rem] drop-shadow-md rounded-xl"
+        class="relative z-0 bg-white xl:w-[66rem] llg:w-[60rem] md:w-[55rem] w-auto md:mx-0 mx-24 llg:h-72 md:h-80 h-[24rem] drop-shadow-md rounded-xl"
       >
-        <div class=" absolute inset-0 z-10 sm:flex ">
+        <div class=" absolute inset-0 z-10 flex ">
           <img
             src={spare}
             alt=""
@@ -122,7 +126,7 @@
         </div>
       </div>
       <div
-        class="relative z-0 bg-white llg:w-[66rem] w-[60rem] h-72 drop-shadow-md rounded-xl mt-20"
+        class="relative z-0 bg-white xl:w-[66rem] llg:w-[60rem] md:w-[55rem] w-auto md:mx-0 mx-24 llg:h-72 md:h-80 h-[24rem] drop-shadow-md rounded-xl mt-20"
       >
         <div class=" absolute inset-0 z-10 flex ">
           <img
