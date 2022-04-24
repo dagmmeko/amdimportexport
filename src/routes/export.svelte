@@ -80,18 +80,18 @@
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.41) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
   <!-- Product Category  -->
-  <section class="pt-24 grid lg:grid-cols-3 place-items-center">
+  <section class="pt-24 grid xl:grid-cols-3 place-items-center">
     <div
-      class="relative z-0 bg-primary llg:w-96 lg:w-80 md:w-[55rem] w-auto md:mx-0 mx-24 lg:col-span-1 drop-shadow-md rounded-xl"
+      class="bg-primary xl:w-80 w-[full] xl:mx-0 lg:mx-24 mx-16  xl:col-span-1 drop-shadow-md rounded-xl"
     >
-      <div class="llg:pt-96 lg:pt-80 pt-10 pb-10 ">
+      <div class="xl:pt-80  ">
         <h1
-          class="lg:text-center lg:pl-0 pl-60 text-white text-2xl font-bold mb-6"
+          class="xl:text-center text-white text-2xl font-bold mb-4 xl:pl-0 pl-72 xl:pt-0 pt-12"
         >
           {$t('export.categoryTitle')}
         </h1>
         <p
-          class="text-white lg:px-8 pl-60 pr-20 text-lg lg:text-center leading-loose"
+          class="xl:text-center text-white xl:px-6 xl:pt-8 pt-4 xl:pb-12 pb-16 xl:pl-0 pl-72 xl:pr-0 lg:pr-20 pr-16  text-lg leading-loose"
         >
           {$t('export.categoryDesc')}
         </p>
@@ -99,21 +99,23 @@
       <img
         src={types}
         alt=""
-        class="absolute inset-0 z-10 llg:w-96 lg:w-80 w-60 llg:h-96 lg:h-80 h-60 -m-9 rounded-xl drop-shadow-xl"
+        class="absolute inset-0 z-10 xl:w-80 xl:h-80 h-72 w-72 -m-9 rounded-xl drop-shadow-xl"
       />
     </div>
 
     <!-- Cars and Spare parts  -->
 
-    <div class="lg:col-span-2 pt-0 lg:mt-0 mt-24 grid">
+    <div
+      class="xl:col-span-2 pt-0 xl:mt-0 mt-28 grid w-full xl:px-0 lg:px-24 px-16"
+    >
       <div
-        class="relative z-0 bg-white xl:w-[66rem] llg:w-[60rem] md:w-[55rem] w-auto md:mx-0 mx-24 llg:h-72 md:h-80 h-[24rem] drop-shadow-md rounded-xl"
+        class="bg-white xl:w-[50rem] w-full xl:h-72 lg:h-80 h-[21rem] drop-shadow-md rounded-xl"
       >
         <div class=" absolute inset-0 z-10 flex ">
           <img
             src={spare}
             alt=""
-            class=" w-60 h-60 object-cover -m-9 rounded-xl drop-shadow-xl"
+            class="xl:w-52 xl:h-52 lg:h-72 lg:w-72 h-52 w-52 object-cover -m-9 rounded-xl drop-shadow-xl"
           />
           <div class="pl-9">
             <h1
@@ -121,26 +123,30 @@
             >
               {$t('export.spareTitle')}
             </h1>
-            <p class="px-12 leading-loose text-lg">{$t('export.spareDesc')}</p>
+            <p class="xl:px-8 pl-8 lg:pr-20 pr-12leading-loose text-base">
+              {$t('export.spareDesc')}
+            </p>
           </div>
         </div>
       </div>
       <div
-        class="relative z-0 bg-white xl:w-[66rem] llg:w-[60rem] md:w-[55rem] w-auto md:mx-0 mx-24 llg:h-72 md:h-80 h-[24rem] drop-shadow-md rounded-xl mt-20"
+        class="bg-white xl:w-[50rem] w-full xl:h-72 lg:h-80 h-[23rem] drop-shadow-md rounded-xl mt-20"
       >
         <div class=" absolute inset-0 z-10 flex ">
           <img
             src={volks}
             alt=""
-            class=" w-60 h-60 object-cover -m-9 rounded-xl drop-shadow-xl"
+            class=" xl:w-52 xl:h-52 h-72 w-72 object-cover -m-9 rounded-xl drop-shadow-xl"
           />
           <div class="pl-9">
             <h1
-              class="bg-secondary w-48 py-4 px-8 text-white text-2xl font-semibold mb-6"
+              class="bg-secondary w-48 py-4 px-8 text-white text-2xl font-semibold mb-4"
             >
               {$t('export.carTitle')}
             </h1>
-            <p class="px-12 leading-loose text-lg">{$t('export.carDesc')}</p>
+            <p class="xl:px-8 pl-8 lg:pr-20 pr-12 leading-loose text-base">
+              {$t('export.carDesc')}
+            </p>
           </div>
         </div>
       </div>
@@ -149,7 +155,7 @@
 
   <!-- Initial Product Types  -->
 
-  <section class="grid place-items-center py-16 ">
+  <section class="grid place-items-center py-16 px-8 ">
     <!-- Import Products -->
     <div class="grid justify-items-stretch">
       <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
@@ -172,6 +178,7 @@
 <!-- Medical Products  -->
 
 <section
+  class="grid place-items-center"
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.41) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
   <div class="relative z-0 h-auto">
@@ -197,7 +204,7 @@
     </div>
   </div>
 
-  <div class="grid place-items-center py-16">
+  <div class="grid place-items-center py-16 px-8">
     <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
       <Productcard image={bpmeter} product={'export.medProd1'} />
       <Productcard image={insulindiabetes} product={'export.medProd2'} />
@@ -241,7 +248,7 @@
     </div>
   </div>
 
-  <div class="grid place-items-center py-16">
+  <div class="grid place-items-center py-16 px-8">
     <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
       <Productcard image={excavator} product={'export.machProd1'} />
       <Productcard image={tractor} product={'export.machProd2'} />

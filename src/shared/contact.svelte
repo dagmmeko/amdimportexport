@@ -4,17 +4,17 @@
   import { t } from '$lib/translations'
 </script>
 
-<div class="relative z-0 llg:h-[55rem] h-[72rem] ">
+<div class="relative z-0 llg:h-[45rem] md:h-[45rem] h-[72rem] ">
   <img
     src={landing}
     alt=""
-    class="object-cover llg:h-[55rem] h-[72rem] w-full"
+    class="object-cover llg:h-[45rem] md:h-[45rem] h-[72rem] w-full"
   />
   <div
     class="absolute inset-0 z-10 bg-black bg-opacity-60 grid  place-items-center"
   >
     <div
-      class="lg:w-[60rem] sm:w-[40rem] vs:w-[25rem] vvs:w-[22rem] w-auto grid my-16 rounded-md md:grid-cols-2 grid-cols-1 bg-bgTwo"
+      class="lg:w-[60rem] md:w-[45rem] sm:w-[40rem] vs:w-[25rem] vvs:w-[22rem] w-auto grid my-16 rounded-md md:grid-cols-2 grid-cols-1 bg-bgTwo"
     >
       <form class=" grid justify-items-stretch py-16 lg:px-12 px-8">
         <h1 class="justify-self-center text-white font-semibold text-3xl mb-8">

@@ -15,6 +15,11 @@
   import lekemeti from '../../static/assets/imports/lekemeti.jpg'
   import jimma from '../../static/assets/imports/jimma.jpg'
   import harar from '../../static/assets/imports/harar.webp'
+  import honey from '../../static/assets/imports/honey.jpg'
+  import cotton from '../../static/assets/imports/cotton.gif'
+  import sesame from '../../static/assets/imports/sesame.jpg'
+  import spice from '../../static/assets/imports/spice.jpg'
+  import teff from '../../static/assets/imports/teff.jpg'
 </script>
 
 <!-- Hero Section  -->
@@ -23,7 +28,7 @@
   <div class="w-full  relative z-0 sm:h-auto h-56">
     <img
       src={hero}
-      class="object-cover w-full sm:h-auto h-56"
+      class="object-cover w-full lg:h-auto h-56"
       alt="Landing background"
     />
     <div
@@ -31,38 +36,38 @@
     />
   </div>
   <div
-    class="sm:grid llg:grid-cols-6 md:grid-cols-5 grid-cols-4 py-4 bg-primary "
+    class="md:grid llg:grid-cols-6 md:grid-cols-5 grid-cols-4 py-4 bg-primary "
   >
     <h1
-      class="text-2xl font-bold text-white md:col-span-2 col-span-1 llg:pl-44 md:pl-24 pl-12 sm:pb-0 pb-4"
+      class="text-xl font-bold text-white md:col-span-2 col-span-1 xl:pl-44 md:pl-24 pl-12 sm:pb-0 pb-4"
     >
       {$t('import.import')}
     </h1>
 
     <div
-      class="vs:grid pl-10 vs:pl-0 justify-items-end grid-flow-col llg:col-start-4 md:col-start-3 col-span-3 llg:pr-44 pr-24 "
+      class="vs:grid pl-10 vs:pl-0 justify-items-end grid-flow-col llg:col-start-4 md:col-start-3 col-span-3 lg:pr-20 pr-12 md:pt-0 vs:pt-8 pt-0"
     >
-      <div class="flex lg:gap-7 gap-5 flex-wrap items-center">
+      <div class="flex lg:gap-7 gap-2 flex-wrap items-center">
         <img src={hand} alt="icon" class="col-span-1" />
-        <h1 class="text-lg text-white font-semibold col-span-3">
+        <h1 class="text-base text-white font-semibold col-span-3">
           {$t('import.linkCoffee')}
         </h1>
       </div>
-      <div class="flex lg:gap-7 gap-5 flex-wrap items-center">
+      <div class="flex lg:gap-7 gap-2 flex-wrap items-center  vs:pt-0 pt-2">
         <img src={hand} alt="icon" class="col-span-1" />
-        <h1 class="text-lg text-white font-semibold col-span-3">
+        <h1 class="text-base text-white font-semibold col-span-3">
           {$t('import.linkOil')}
         </h1>
       </div>
-      <div class="flex lg:gap-7 gap-5 flex-wrap items-center">
+      <div class="flex lg:gap-7 gap-2 flex-wrap items-center  vs:pt-0 pt-2">
         <img src={hand} alt="icon" class="col-span-1" />
-        <h1 class="text-lg text-white font-semibold col-span-3">
+        <h1 class="text-base text-white font-semibold col-span-3">
           {$t('import.linkHoney')}
         </h1>
       </div>
-      <div class="flex lg:gap-7 gap-5 flex-wrap items-center">
+      <div class="flex lg:gap-7 gap-2 flex-wrap items-center  vs:pt-0 pt-2">
         <img src={hand} alt="icon" class="col-span-1" />
-        <h1 class="text-lg text-white font-semibold col-span-3">
+        <h1 class="text-base text-white font-semibold col-span-3">
           {$t('import.linkSpices')}
         </h1>
       </div>
@@ -74,24 +79,24 @@
 Title to Coffee
  -->
 <section
-  class="pt-24 grid sm:px-0 px-16 "
+  class="pt-24 grid "
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.41) 36.98%, rgba(29, 160, 236, 0.1) 100%)"
 >
   <div
-    class="place-self-center grid vs:grid-cols-3 bg-white llg:w-[85rem] lg:w-[70rem] md:w-[60rem] sm:w-[50rem] w-auto lg:h-[18rem] md:h-[20rem] sm:h-[24rem] h-auto  drop-shadow-md rounded-xl "
+    class="place-self-center lg:flex  bg-white drop-shadow-md rounded-xl sm:mx-32 vs:mx-16 mx-8 "
   >
     <img
       src={spare}
       alt=""
-      class="object-cover rounded-xl drop-shadow-xl -m-9 lg:w-72 lg:h-72 vs:w-60 vs:h-60 h-48 w-full"
+      class="object-cover rounded-xl drop-shadow-xl vs:-m-9 sm:h-60 h-auto lg:w-60 w-auto"
     />
     <h1
-      class="bg-primary text-white text-2xl font-semibold text-center lg:-ml-56 md:-ml-44 sm:-ml-32 vs:-ml-14 vs:mt-0 mt-9 w-80 py-4 h-16"
+      class="bg-primary text-white text-xl font-semibold text-center lg:ml-9 ml-0 lg:mt-0 mt-8 px-16 lg:w-80 w-52 h-12 flex items-center"
     >
       {$t('import.coffeeTitle')}
     </h1>
     <p
-      class="leading-loose sm:pt-24 vs:pt-24 pt-8 pb-8 llg:-ml-[40rem] lg:-ml-[32rem] md:-ml-[28rem] sm:-ml-[22rem] vs:-ml-[18rem] px-12 "
+      class="leading-loose lg:pt-16 pt-4  pb-8 lg:-ml-32 vs:ml-12 ml-8 lg:pr-16 vs:pr-8 pr-6 text-base  "
     >
       {$t('import.coffeeDesc')}
     </p>
@@ -101,8 +106,10 @@ Title to Coffee
 Coffee List 
  -->
 
-  <div class="grid place-items-center pb-8">
-    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
+  <div class="grid place-items-center pb-8 md:px-20 px-10 ">
+    <div
+      class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-16 mt-16 "
+    >
       <CoffeeCard image={guji} product={'Guji'} para={'import.cofProdDes1'} />
       <CoffeeCard
         image={yirgachefe}
@@ -141,12 +148,12 @@ Other Imports -->
       {$t('export.machTitle')}
     </h1>
     <p
-      class="text-white justify-self-center self-center text-center lg:px-72 px-16 leading-loose text-lg"
+      class="text-white justify-self-center self-center text-center lg:px-72 vs:px-16 px-10 leading-loose text-base"
     >
       {$t('export.machDesc')}
     </p>
     <h1
-      class="text-white text-xl font-bold p justify-self-center self-center pb-8"
+      class="text-white text-lg font-bold p justify-self-center self-center pb-8"
     >
       {$t('export.machLink')}
     </h1>
@@ -157,11 +164,11 @@ Other Imports -->
   class="place-items-center py-16 grid llg:grid-cols-5 md:grid-cols-3 vs:grid-cols-2 gap-4"
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.41) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
-  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
-  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
-  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
-  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
-  <ImportCard image={spare} product={'import.prodTitle1'} color="blue" />
+  <ImportCard image={sesame} product={'import.prodTitle1'} color="blue" />
+  <ImportCard image={honey} product={'import.prodTitle2'} color="orange" />
+  <ImportCard image={cotton} product={'import.prodTitle3'} color="blue" />
+  <ImportCard image={spice} product={'import.prodTitle4'} color="orange" />
+  <ImportCard image={teff} product={'import.prodTitle5'} color="blue" />
 </section>
 
 <Contact />

@@ -5,17 +5,13 @@
   export let para
 </script>
 
-<div class="xl:w-96 llg:w-80 lg:w-72 w-96 drop-shadow-md lg:mt-0 mt-16">
-  <img
-    src={image}
-    alt=""
-    class="xl:w-96 llg:w-80 lg:w-72 w-96 h-64 object-cover"
-  />
-  <div class="bg-white border-primary border-2 min-h-[12rem] pt-6">
+<div class="lg:w-72 md:w-80 w-full drop-shadow-md ">
+  <img src={image} alt="" class="lg:w-72 w-full md:h-64 h-96 object-cover" />
+  <div class="bg-white border-primary border-2 md:min-h-[12rem] h-auto pt-2">
     <h1 class="text-center font-medium text-xl text-primary">
       {product}
     </h1>
-    <p class="px-10 text-center leading-loose py-4">
+    <p class="px-8 text-center leading-loose md:py-2 py-4">
       {$t(`${para}`)}
     </p>
   </div>
