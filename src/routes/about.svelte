@@ -33,10 +33,12 @@ Hero Section
     class="absolute inset-0 z-10"
     style="background: linear-gradient(90deg, #8EAAB4 31.01%, rgba(142, 170, 180, 0) 122.19%);"
   >
-    <h1 class="md:pl-44 pl-32 md:pt-44 pt-32 text-white text-5xl font-bold">
+    <h1
+      class="md:pl-44 vs:pl-32 pl-16  md:pt-44 pt-32 text-white md:text-5xl text-3xl font-bold"
+    >
       About us
     </h1>
-    <h1 class="md:pl-44 pl-32 pt-4 text-white text-lg">
+    <h1 class="md:pl-44 vs:pl-32 pl-16 pt-4 vs:pr-0 pr-16 text-white text-lg">
       AMD International Import and Export
     </h1>
   </div>
@@ -48,18 +50,16 @@ All about us Section
 <div
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.64) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
-  <section
-    class="lg:grid lg:pl-0 vs:pl-24 pl-16 grid-cols-2 justify-items-stretch pt-24"
-  >
+  <section class="grid place-items-center md:grid-cols-3 pt-16">
     <img
       src={owner}
       alt="Manager/Owner"
-      class="xl:h-[25rem] h-[23rem] xl:w-[36rem] lg:w-[30rem] rounded-lg drop-shadow-md object-cover justify-self-center"
+      class=" rounded-xl drop-shadow-xl object-cover justify-self-center lg:w-80 w-96 md:lg:h-96 md:h-[25rem] llg:ml-44 ml-20"
     />
     <div
-      class=" md:h-[30rem] sm:h-[25rem] h-auto xl:w-[50rem] lg:w-[40rem] md:w-[50rem] w-auto md:pr-0 pr-16 lg:mt-0 mt-8 "
+      class=" w-auto lg:mt-0 mt-8 col-span-2 llg:px-24 lg:px-16 vs:pl-16 pl-8 pr-8"
     >
-      <h1 class="text-4xl mb-8 text-primary font-bold  ">
+      <h1 class="text-4xl mb-4 ml-12 text-primary font-bold  ">
         {$t('about.whoTitle')}
       </h1>
       <div class="flex drop-shadow-md">
@@ -76,9 +76,13 @@ All about us Section
 Missions section
  -->
 
-  <section class="llg:grid grid-cols-2 md:mt-0 vs:mt-16 vvs:mt-48 ">
-    <div class="relative z-0  h-[45rem] xl:w-auto llg:w-[45rem] w-auto">
-      <img src={team} alt="" class="w-full  h-full object-cover" />
+  <section class="llg:grid grid-cols-2 vs:mt-16 vvs:mt-28 ">
+    <div class="relative z-0  ">
+      <img
+        src={team}
+        alt=""
+        class="w-full  llg:h-full vs:h-[40rem] h-[45rem] object-cover"
+      />
       <div class="absolute inset-0 z-10  bg-primary bg-opacity-60 grid ">
         <MissionCard
           icon={mission}
@@ -95,7 +99,7 @@ Missions section
       </div>
     </div>
 
-    <div class="grid">
+    <div class="grid pb-8">
       <ValuesCard
         icon={goals}
         title={$t('about.goalsTitle')}
@@ -118,7 +122,7 @@ Missions section
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.64) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
   <div class="relative z-0">
-    <img src={aboutHero} alt="" class="w-full sm:h-96 h-[28rem] object-cover" />
+    <img src={aboutHero} alt="" class="w-full sm:h-96 h-[36rem] object-cover" />
     <div
       class="absolute inset-0 z-10 bg-black bg-opacity-80 grid justify-items-stretch"
     >
@@ -148,33 +152,37 @@ Missions section
     />
   </div>
 
-  <section class="w-full relative z-0 grid justify-items-stretch">
+  <section
+    class="w-full relative z-0 grid justify-items-stretch pb-2 lg:pt-0 pt-10"
+  >
     <div class="absolute -z-30 ">
-      <div class=" relative -mt-12">
-        <img src={polygon2} alt="" class="  h-[32rem]" />
+      <div class=" relative -mt-7">
+        <img src={polygon2} alt="" class="  h-[20rem]" />
       </div>
       <div class="absolute inset-0  ">
-        <img src={polygon1} alt="" class="h-[27rem]" />
+        <img src={polygon1} alt="" class="h-[17rem]" />
       </div>
     </div>
 
     <div
-      class="relative inset-0 z-0 grid lg:grid-cols-3 sm:grid-cols-2 lg:pl-44 vvs:px-24 px-12 place-items-center"
+      class="relative inset-0 z-0 grid lg:grid-cols-5 sm:grid-cols-2 place-items-center"
     >
-      <img src={businessman} alt="" class="sm:block hidden" />
-      <div class="bg-white drop-shadow-md border-primary border-2 rounded-md ">
+      <img src={businessman} alt="" class="lg:block hidden pt-40 " />
+      <div
+        class="bg-white drop-shadow-xl border-primary border-2 rounded-md col-span-2 xl:mx-16 mx-8"
+      >
         <h1
-          class="pl-8 py-8 text-3xl font-semibold text-primary drop-shadow-md"
+          class="pl-8 py-4 text-2xl font-semibold text-primary drop-shadow-md"
         >
           {$t('about.socialTitle')}
         </h1>
         {#each new Array(3) as _, index}
-          <li class="px-16 leading-loose pb-8">
+          <li class="pl-16 pr-8 leading-loose pb-4">
             {$t(`about.socialDesc.${index}`)}
           </li>
         {/each}
       </div>
-      <div class="sm:pl-16 pl-0 lg:my-0 my-8 lg:col-span-1 col-span-2">
+      <div class="xl:px-10 px-6 lg:my-0 my-8 col-span-2">
         <div class="bg-primary drop-shadow-md ">
           <h1 class="pl-8 py-4 text-2xl font-semibold text-white">
             {$t('about.socialTypes.innovation')}
