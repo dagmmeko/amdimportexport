@@ -59,7 +59,7 @@ All about us Section
     <div
       class=" w-auto lg:mt-0 mt-8 col-span-2 llg:px-24 lg:px-16 vs:pl-16 pl-8 pr-8"
     >
-      <h1 class="text-4xl mb-4 ml-12 text-primary font-bold  ">
+      <h1 class="text-3xl mb-4 ml-12 text-primary font-bold  ">
         {$t('about.whoTitle')}
       </h1>
       <div class="flex drop-shadow-md">

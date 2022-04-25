@@ -15,6 +15,8 @@ const config = {
       // => @media (min-width: 320px) 
       vvs: '370px',
       // => @media (min-width: 370px)
+      vss: '400px',
+      vsss: '450px',
       vs: '550px',
       // => @media (min-width: 550px)
       sm: '640px',
@@ -23,9 +25,12 @@ const config = {
       md: '768px',
       // => @media (min-width: 768px) { ... }
 
+      mmd: '850px',
+      // => @media (min-width: 850px) { ... }
+      mdd: '920px',
       lg: '1024px',
       // => @media (min-width: 1024px) { ... }
-
+      lgg: '1090px',
       llg: '1150px',
       // => @media (min-width: 1024px) { ... }
 
