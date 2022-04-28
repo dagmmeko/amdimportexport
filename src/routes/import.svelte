@@ -6,7 +6,6 @@
 
   import hand from '../../static/assets/icons/handPoint.svg'
   import hero from '../../static/assets/imports/hero.svg'
-  import spare from '../../static/assets/exports/spare.jpg'
   import CoffeeCard from '../shared/components/coffee-card.svelte'
   import guji from '../../static/assets/imports/guji.webp'
   import yirgachefe from '../../static/assets/imports/yirgacheffe.jpg'
@@ -20,6 +19,8 @@
   import sesame from '../../static/assets/imports/sesame.jpg'
   import spice from '../../static/assets/imports/spice.jpg'
   import teff from '../../static/assets/imports/teff.jpg'
+  import coffee from '../../static/assets/imports/coffee.jpg'
+  import machinery from '../../static/assets/imports/machinery.jpg'
 </script>
 
 <!-- Hero Section  -->
@@ -86,7 +87,7 @@ Title to Coffee
     class="place-self-center lg:flex  bg-white drop-shadow-md rounded-xl sm:mx-32 vs:mx-16 mx-8 "
   >
     <img
-      src={spare}
+      src={coffee}
       alt=""
       class="object-cover rounded-xl drop-shadow-xl vs:-m-9 sm:h-60 h-auto lg:w-60 w-auto"
     />
@@ -137,8 +138,8 @@ Coffee List
 <!-- 
 Other Imports -->
 
-<div class="relative z-0 h-72">
-  <img src={hero} alt="" class="w-full h-72 object-cover" />
+<div class="relative z-0 h-56">
+  <img src={machinery} alt="" class="w-full h-56 object-cover object-center" />
   <div
     class="absolute inset-0 z-10 bg-black bg-opacity-70 grid justify-items-stretch"
   >
@@ -146,16 +147,6 @@ Other Imports -->
       class="text-white text-3xl font-bold pt-8 justify-self-center self-center "
     >
       {$t('export.machTitle')}
-    </h1>
-    <p
-      class="text-white justify-self-center self-center text-center lg:px-72 vs:px-16 px-10 leading-loose text-base"
-    >
-      {$t('export.machDesc')}
-    </p>
-    <h1
-      class="text-white text-lg font-bold p justify-self-center self-center pb-8"
-    >
-      {$t('export.machLink')}
     </h1>
   </div>
 </div>

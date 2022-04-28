@@ -15,13 +15,13 @@
 
   import yirgacheffe from '../../static/assets/images/yirgacheffe.svg'
   import sesame from '../../static/assets/images/sesame.svg'
-  import sunflower from '../../static/assets/images/sunflower.svg'
+  import teff from '../../static/assets/images/teff.jpg'
   import soyaBeans from '../../static/assets/images/Soya-Beans.svg'
 
   import sparePart from '../../static/assets/images/spare-part.svg'
   import rangerover from '../../static/assets/exports/range-rover.webp'
   import hansaplast from '../../static/assets/images/hansaplast.svg'
-  import excavator from '../../static/assets/images/excavator.svg'
+  import excavator from '../../static/assets/images/machine.jpg'
 
   import coffeehands from '../../static/assets/images/coffeehands.png'
   import SeriveCard from '../shared/components/service-card.svelte'
@@ -146,7 +146,7 @@ Products section
     <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6  ">
       <Productcard image={yirgacheffe} product={'common.importProd1'} />
       <Productcard image={sesame} product={'common.importProd2'} />
-      <Productcard image={sunflower} product={'common.importProd3'} />
+      <Productcard image={teff} product={'common.importProd3'} />
       <Productcard image={soyaBeans} product={'common.importProd4'} />
     </div>
     <a href="#contact" class="justify-self-center mt-10">

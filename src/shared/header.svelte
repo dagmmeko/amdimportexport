@@ -13,13 +13,13 @@
   "
 >
   <div
-    class="flex justify-between items-center space-x-8 mx-auto md:max-w-screen-xl px-4 md:px-16 py-3"
+    class="flex justify-between items-center space-x-8 mx-auto md:max-w-screen-xl px-4 md:px-16 py-2"
   >
     <a sveltekit:prefetch href="/#top">
       <img
         alt="Semuny Logo Wordmark"
         src={logo}
-        class="h-20 w-28 md:ml-12 justify-self-start"
+        class="h-16 w-24 md:ml-12 justify-self-start"
         width={350}
         height={100}
       />

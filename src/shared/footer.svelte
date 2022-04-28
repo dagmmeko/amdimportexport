@@ -7,6 +7,7 @@
 
   import location from '../../static/assets/icons/location.svg'
   import phone from '../../static/assets/icons/phone.svg'
+  import whatsapp from '../../static/assets/icons/whatsapp.svg'
   import email from '../../static/assets/icons/email.svg'
   import copyright from '../../static/assets/icons/copyright.svg'
 </script>
@@ -48,7 +49,7 @@
       <h1 class="text-white font-medium text-base px-4 ">+4960327843114</h1>
     </div>
     <div class="flex items-center pb-4">
-      <img src={phone} alt="" />
+      <img src={whatsapp} alt="" />
       <h1 class="text-white font-medium text-base px-4 ">+4915212947362</h1>
     </div>
     <div class="flex items-center pb-4">

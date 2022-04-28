@@ -1,12 +1,12 @@
 <script lang="ts">
-  import landing from '../../static/assets/images/landing.jpg'
+  import contact from '../../static/assets/images/contact.png'
 
   import { t } from '$lib/translations'
 </script>
 
 <div class="relative z-0 llg:h-[45rem] md:h-[45rem] h-[72rem] ">
   <img
-    src={landing}
+    src={contact}
     alt=""
     class="object-cover llg:h-[45rem] md:h-[45rem] h-[72rem] w-full"
   />
