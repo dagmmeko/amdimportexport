@@ -16,13 +16,25 @@
     <div
       class="lg:w-[60rem] md:w-[45rem] sm:w-[40rem] vs:w-[25rem] vvs:w-[22rem] w-auto grid my-16 rounded-md md:grid-cols-2 grid-cols-1 bg-bgTwo"
     >
-      <form class=" grid justify-items-stretch py-16 lg:px-12 px-8">
+      <form
+        action="https://formspree.io/f/xvolvqdg"
+        method="post"
+        class=" grid justify-items-stretch py-16 lg:px-12 px-8"
+      >
         <h1 class="justify-self-center text-white font-semibold text-3xl mb-8">
           {$t('common.contact')}
         </h1>
         <input type="text" placeholder={$t('common.contactName')} />
-        <input type="text" placeholder={$t('common.contactEmail')} />
-        <textarea placeholder={$t('common.contactMessage')} class="textarea" />
+        <input
+          type="email"
+          name="email"
+          placeholder={$t('common.contactEmail')}
+        />
+        <textarea
+          name="message"
+          placeholder={$t('common.contactMessage')}
+          class="textarea"
+        />
 
         <button
           class="bg-bgOne w-40  justify-self-center py-4 rounded-md mt-4 font-medium "
@@ -46,6 +58,7 @@
 
 <style>
   input[type='text'],
+  input[type='email'],
   select {
     width: 100%;
     padding: 12px 20px;
