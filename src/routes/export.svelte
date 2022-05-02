@@ -13,7 +13,7 @@
   import hyundai from '../../static/assets/exports/hyundai.webp'
   import landcruiser from '../../static/assets/exports/landcruiser.webp'
   import rangerover from '../../static/assets/exports/range-rover-2.jpg'
-  import chr from '../../static/assets/exports/chr.webp'
+  import sino from '../../static/assets/exports/sino.png'
   import wheat from '../../static/assets/exports/wheat.svg'
   import sugar from '../../static/assets/exports/sugar.svg'
   import sunflower from '../../static/assets/exports/sunflower.svg'
@@ -166,7 +166,7 @@
         <Productcard image={hyundai} product={'export.carProd1'} />
         <Productcard image={landcruiser} product={'export.carProd2'} />
         <Productcard image={rangerover} product={'export.carProd3'} />
-        <Productcard image={chr} product={'export.carProd4'} />
+        <Productcard image={sino} product={'export.carProd4'} />
       </div>
 
       <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6 mt-8 ">
