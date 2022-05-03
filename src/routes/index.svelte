@@ -40,6 +40,7 @@
     src={landing}
     class="object-cover h-[55rem] w-full"
     alt="Landing background"
+    loading="lazy"
   />
   <div
     class="absolute inset-0 z-10 bg-black bg-opacity-70 flex justify-items-stretch "

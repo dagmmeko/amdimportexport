@@ -8,3 +8,4 @@ declare namespace App {
   // interface Session {}
   // interface Stuff {}
 }
+declare module '*.png?h=96'
