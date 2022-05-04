@@ -150,7 +150,7 @@ Products section
       <Productcard image={teff} product={'common.importProd3'} />
       <Productcard image={soyaBeans} product={'common.importProd4'} />
     </div>
-    <a href="#contact" class="justify-self-center mt-10">
+    <a href="/import" class="justify-self-center mt-10">
       <div
         class="text-white mt-8 bg-bgTwo py-4 px-16 h-14 rounded-md text-center"
       >
@@ -169,7 +169,7 @@ Products section
       <Productcard image={hansaplast} product={'common.exportProd3'} />
       <Productcard image={sparePart} product={'common.exportProd4'} />
     </div>
-    <a href="#contact" class="justify-self-center mt-10">
+    <a href="/export" class="justify-self-center mt-10">
       <div
         class="text-white mt-8 bg-bgTwo py-4 px-16 h-14 rounded-md text-center"
       >

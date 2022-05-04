@@ -146,7 +146,7 @@ Other Imports -->
     <h1
       class="text-white text-3xl font-bold pt-8 justify-self-center self-center "
     >
-      {$t('export.machTitle')}
+      {$t('import.importTitle')}
     </h1>
   </div>
 </div>
