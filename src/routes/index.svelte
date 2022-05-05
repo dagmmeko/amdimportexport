@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations'
-  import landing from '../../static/assets/images/landing.jpg'
+  import landing from '../../static/assets/images/landing.webp'
 
   import polygon1 from '../../static/assets/icons/Polygon1.svg'
   import polygon2 from '../../static/assets/icons/Polygon2.svg'
@@ -21,7 +21,7 @@
   import sparePart from '../../static/assets/images/spare-part.svg'
   import rangerover from '../../static/assets/exports/range-rover.webp'
   import hansaplast from '../../static/assets/images/hansaplast.svg'
-  import excavator from '../../static/assets/images/machine.jpg'
+  import excavator from '../../static/assets/images/machine.webp'
 
   import coffeehands from '../../static/assets/images/coffeehands.png'
   import SeriveCard from '../shared/components/service-card.svelte'
