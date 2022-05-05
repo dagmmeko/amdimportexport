@@ -1,5 +1,5 @@
 <script>
-  import logo from '../../static/assets/logo/amdlogo.png'
+  import logo from '../../static/assets/logo/amdlogo.webp'
   import facebook from '../../static/assets/social-media/facebook.svg'
   import twitter from '../../static/assets/social-media/twitter.svg'
   import linkedin from '../../static/assets/social-media/linkedin.svg'

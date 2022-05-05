@@ -1,5 +1,5 @@
 <script lang="ts">
-  import logo from '../../static/assets/logo/amdlogo.png'
+  import logo from '../../static/assets/logo/amdlogo.webp'
   import { locales, locale, t } from '$lib/translations'
 
   let isNavOpen = false
