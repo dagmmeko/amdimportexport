@@ -88,23 +88,25 @@
     <div
       class="bg-primary xl:w-80 w-[full] xl:mx-0 lg:mx-24 vs:mx-16 mx-8 xl:col-span-1 drop-shadow-md rounded-xl"
     >
-      <div class="xl:pt-80 mmd:pt-0 vs:pt-[27rem] pt-80   ">
-        <h1
-          class="xl:text-center text-white text-3xl font-bold mb-4 xl:pl-0 llg:pl-80 mmd:pl-72 pl-10 xl:pt-0 vs:pt-10 vsss:pt-36 vvs:pt-12 pt-0"
-        >
-          {$t('export.categoryTitle')}
-        </h1>
-        <p
-          class="xl:text-center text-white xl:px-6 xl:pt-8 pt-4 xl:pb-12 pb-16 xl:pl-0 llg:pl-80 mmd:pl-72 pl-10 xl:pr-0 llg:pr-20 lg:pr-16 pr-10  text-lg leading-loose"
-        >
-          {$t('export.categoryDesc')}
-        </p>
+      <div class="xl:block mmd:flex">
+        <img
+          src={types}
+          alt=""
+          class="-m-9 rounded-xl drop-shadow-xl mmd:w-72 mmd:h-72 vs:w-[30rem] vs:h-[30rem]"
+        />
+        <div>
+          <h1
+            class="mt-10 xl:text-center mmd:text-left text-center  text-white text-2xl font-bold xl:pt-6 mmd:pt-0 pt-6 xl:pl-0 mmd:pl-20 pl-0 "
+          >
+            {$t('export.categoryTitle')}
+          </h1>
+          <p
+            class="xl:text-center mmd:text-left text-center text-white xl:px-6 mmd:px-0 px-6  mmd:pl-20 mmd:pr-20 pt-8 xl:pb-12 mmd:pb-24 pb-12 leading-loose"
+          >
+            {$t('export.categoryDesc')}
+          </p>
+        </div>
       </div>
-      <img
-        src={types}
-        alt=""
-        class="absolute inset-0 z-10 mmd:w-72 mmd:h-72 vs:w-[30rem] vs:h-[30rem] -m-9 rounded-xl drop-shadow-xl"
-      />
     </div>
 
     <!-- Cars and Spare parts  -->
@@ -115,7 +117,7 @@
       <div
         class="bg-white xl:w-[50rem] w-full xl:h-72 lg:h-80 mmd:h-[22rem] md:h-[40rem] sm:h-[38rem] vs:h-[40rem] h-[40rem] drop-shadow-md rounded-xl"
       >
-        <div class=" absolute inset-0 z-10 mmd:flex ">
+        <div class=" mmd:flex ">
           <img
             src={spare}
             alt=""
@@ -136,7 +138,7 @@
       <div
         class="bg-white xl:w-[50rem] w-full xl:h-72  llg:h-80 lgg:h-[20rem] lg:h-80 mdd:h-[21rem]  mmd:h-[24rem] md:h-[42rem] sm:h-[40rem] vs:h-[40rem] vss:h-[38rem]  h-[42rem] drop-shadow-md rounded-xl mt-24"
       >
-        <div class=" absolute inset-0 z-10 mmd:flex ">
+        <div class=" mmd:flex ">
           <img
             src={volks}
             alt=""

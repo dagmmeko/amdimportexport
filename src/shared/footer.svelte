@@ -37,7 +37,7 @@
 
       <img src={copyright} alt="Facebook Link" class="" />
       <h1 class="text-white font-medium text-base px-4 ">
-        AMD International Trading
+        AMD International Import-Export Trading Company
       </h1>
     </div>
   </div>
