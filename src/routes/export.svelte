@@ -42,9 +42,6 @@
       class="object-cover w-full lg:h-auto h-56"
       alt="Landing background"
     />
-    <div
-      class="absolute inset-0 z-10 bg-black bg-opacity-70 flex justify-items-stretch "
-    />
   </div>
   <div
     class="md:grid llg:grid-cols-6 md:grid-cols-5 grid-cols-4 py-4 bg-primary "
@@ -190,7 +187,7 @@
   <div class="relative z-0">
     <img src={hero} alt="" class="w-full sm:h-80 h-[26rem] object-cover" />
     <div
-      class="absolute inset-0 z-10 bg-black bg-opacity-80 grid justify-items-stretch"
+      class="absolute inset-0 z-10 bg-black bg-opacity-60 grid justify-items-stretch"
     >
       <h1
         class="text-white md:text-3xl text-2xl font-bold justify-self-center self-center "
@@ -234,7 +231,7 @@
   <div class="relative z-0">
     <img src={machine} alt="" class="w-full sm:h-56 h-[15rem] object-cover" />
     <div
-      class="absolute inset-0 z-10 bg-black bg-opacity-70 grid justify-items-stretch"
+      class="absolute inset-0 z-10 bg-black bg-opacity-50 grid justify-items-stretch"
     >
       <h1
         class="text-white md:text-3xl text-2xl font-bold justify-self-center self-center  "

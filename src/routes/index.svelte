@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/translations'
-  import landing from '../../static/assets/images/landing.webp'
+  import landing from '../../static/assets/images/landing.jpg'
 
   import polygon1 from '../../static/assets/icons/Polygon1.svg'
   import polygon2 from '../../static/assets/icons/Polygon2.svg'
@@ -43,7 +43,7 @@
     loading="lazy"
   />
   <div
-    class="absolute inset-0 z-10 bg-black bg-opacity-70 flex justify-items-stretch "
+    class="absolute inset-0 z-10 bg-black bg-opacity-50 flex justify-items-stretch "
   >
     <div class="self-center md:pl-36 pl-10">
       <h1
@@ -189,7 +189,7 @@ Products section
     <div class="relative z-0 h-56">
       <img src={coffeehands} alt="" class="w-full h-56 object-cover" />
       <div
-        class="absolute inset-0 z-10 bg-black bg-opacity-80 grid justify-items-stretch"
+        class="absolute inset-0 z-10 bg-black bg-opacity-60 grid justify-items-stretch"
       >
         <h1 class="text-white text-3xl justify-self-center self-center">
           {$t('common.customer')}

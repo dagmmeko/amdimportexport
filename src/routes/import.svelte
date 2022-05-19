@@ -33,7 +33,7 @@
       alt="Landing background"
     />
     <div
-      class="absolute inset-0 z-10 bg-black bg-opacity-70 flex justify-items-stretch "
+      class="absolute inset-0 z-10 bg-black bg-opacity-20 flex justify-items-stretch "
     />
   </div>
   <div
@@ -140,26 +140,24 @@ Other Imports -->
 
 <div class="relative z-0 h-56">
   <img src={machinery} alt="" class="w-full h-56 object-cover object-center" />
-  <div
-    class="absolute inset-0 z-10 bg-black bg-opacity-70 grid justify-items-stretch"
-  >
-    <h1
-      class="text-white text-3xl font-bold pt-8 justify-self-center self-center "
-    >
-      {$t('import.importTitle')}
-    </h1>
-  </div>
 </div>
 
 <section
-  class="place-items-center py-16 grid llg:grid-cols-5 md:grid-cols-3 vs:grid-cols-2 gap-4"
+  class=""
   style="background: linear-gradient(180deg, rgba(173, 193, 200, 0.41) 36.98%, rgba(29, 160, 236, 0.1) 100%);"
 >
-  <ImportCard image={sesame} product={'import.prodTitle1'} color="blue" />
-  <ImportCard image={honey} product={'import.prodTitle2'} color="orange" />
-  <ImportCard image={cotton} product={'import.prodTitle3'} color="blue" />
-  <ImportCard image={spice} product={'import.prodTitle4'} color="orange" />
-  <ImportCard image={teff} product={'import.prodTitle5'} color="blue" />
+  <h1 class="text-2xl text-gray-600 font-bold pt-8 grid place-items-center  ">
+    {$t('import.importTitle')}
+  </h1>
+  <div
+    class="place-items-center py-8 grid llg:grid-cols-5 md:grid-cols-3 vs:grid-cols-2 gap-4"
+  >
+    <ImportCard image={sesame} product={'import.prodTitle1'} color="blue" />
+    <ImportCard image={honey} product={'import.prodTitle2'} color="orange" />
+    <ImportCard image={cotton} product={'import.prodTitle3'} color="blue" />
+    <ImportCard image={spice} product={'import.prodTitle4'} color="orange" />
+    <ImportCard image={teff} product={'import.prodTitle5'} color="blue" />
+  </div>
 </section>
 
 <Contact />
